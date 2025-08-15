@@ -14,6 +14,11 @@ SMODS.Joker{
             count = 0
         }
     },
+    credit = {
+        art = "Shrimp",
+        code = "Shrimp",
+        concept = "@andresirlo",
+    },
     calculate = function(self, card, context)
         if context.end_of_round and context.game_over == false and context.main_eval  and not context.blueprint then
             if (card.ability.extra.count or 0) == 3 then

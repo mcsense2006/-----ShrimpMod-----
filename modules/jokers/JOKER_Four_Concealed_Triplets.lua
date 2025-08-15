@@ -1,4 +1,4 @@
-SMODS.Joker{ --Four Concealed Triplets
+SMODS.Joker{
     key = "JOKER_Four_Concealed_Triplets",
     config = {
         extra = {
@@ -18,6 +18,11 @@ SMODS.Joker{ --Four Concealed Triplets
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "Shrimp",
+        code = "Shrimp",
+        concept = " u/a45wesley",
+    },
     loc_vars = function(self, info_queue, card)
         return {vars = { card.ability.extra.counttriplet}}
     end,

@@ -17,6 +17,11 @@ SMODS.Joker{ --Steak
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "",
+        code = "Shrimp",
+        concept = "",
+    },
 
     calculate = function(self, card, context)
         if context.using_consumeable  then

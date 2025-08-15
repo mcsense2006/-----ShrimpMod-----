@@ -21,6 +21,11 @@ SMODS.Joker{
     loc_vars = function(self, info_queue, card)
             return {vars = { card.ability.extra.Xmult}}
     end,
+    credit = {
+        art = "",
+        code = "Shrimp",
+        concept = "Shrimp",
+    },
 
     calculate = function(self, card, context)
         if context.repetition and context.cardarea == G.play  then

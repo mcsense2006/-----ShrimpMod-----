@@ -9,7 +9,7 @@ SMODS.Joker{
         }
     },
     credit = {
-        art = '',
+        art = 'Shrimp',
         code = 'Shrimp',
         concept = '',
     },

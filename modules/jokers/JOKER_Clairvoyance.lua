@@ -14,6 +14,11 @@ SMODS.Joker{
             charm = 0
         }
     },
+    credit = {
+        art = "",
+        code = "Shrimp",
+        concept = "@andresirlo",
+    },
     calculate = function(self, card, context)
         if context.end_of_round and context.main_eval and G.GAME.blind.boss  and not context.blueprint then
                 return {

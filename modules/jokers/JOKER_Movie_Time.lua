@@ -2,7 +2,7 @@ SMODS.Joker{ --Movie Time
     key = "JOKER_Movie_Time",
     config = {
         extra = {
-            respect = 0
+            ignore = 0
         }
     },
     pos = {
@@ -17,15 +17,17 @@ SMODS.Joker{ --Movie Time
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "",
+        code = "Shrimp",
+        concept = "Shrimp",
+    },
 
     calculate = function(self, card, context)
-        if context.selling_self  then
+        if context.selling_self  and not context.blueprint then
                 return {
                     func = function()
-            local created_joker = false
-    if #G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit then
-        created_joker = true
-        G.GAME.joker_buffer = G.GAME.joker_buffer + 1
+            local created_joker = true
             G.E_MANAGER:add_event(Event({
                 func = function()
                     local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_popcorn' })
@@ -33,22 +35,19 @@ SMODS.Joker{ --Movie Time
                         
                         
                     end
-                    G.GAME.joker_buffer = 0
+                    
                     return true
                 end
             }))
-            end
+            
             if created_joker then
-                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "It s TV Time!", colour = G.C.BLUE})
+                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Its TV Time!", colour = G.C.BLUE})
             end
             return true
         end,
                     extra = {
                         func = function()
-            local created_joker = false
-    if #G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit then
-        created_joker = true
-        G.GAME.joker_buffer = G.GAME.joker_buffer + 1
+            local created_joker = true
             G.E_MANAGER:add_event(Event({
                 func = function()
                     local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_popcorn' })
@@ -56,23 +55,20 @@ SMODS.Joker{ --Movie Time
                         
                         
                     end
-                    G.GAME.joker_buffer = 0
+                    
                     return true
                 end
             }))
-            end
+            
             if created_joker then
-                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "It s TV Time!", colour = G.C.BLUE})
+                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Its TV Time!", colour = G.C.BLUE})
             end
             return true
         end,
                         colour = G.C.BLUE,
                         extra = {
                             func = function()
-            local created_joker = false
-    if #G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit then
-        created_joker = true
-        G.GAME.joker_buffer = G.GAME.joker_buffer + 1
+            local created_joker = true
             G.E_MANAGER:add_event(Event({
                 func = function()
                     local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_popcorn' })
@@ -80,23 +76,20 @@ SMODS.Joker{ --Movie Time
                         
                         
                     end
-                    G.GAME.joker_buffer = 0
+                    
                     return true
                 end
             }))
-            end
+            
             if created_joker then
-                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "It s TV Time!", colour = G.C.BLUE})
+                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Its TV Time!", colour = G.C.BLUE})
             end
             return true
         end,
                             colour = G.C.BLUE,
                         extra = {
                             func = function()
-            local created_joker = false
-    if #G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit then
-        created_joker = true
-        G.GAME.joker_buffer = G.GAME.joker_buffer + 1
+            local created_joker = true
             G.E_MANAGER:add_event(Event({
                 func = function()
                     local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_popcorn' })
@@ -104,23 +97,20 @@ SMODS.Joker{ --Movie Time
                         
                         
                     end
-                    G.GAME.joker_buffer = 0
+                    
                     return true
                 end
             }))
-            end
+            
             if created_joker then
-                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "It s TV Time!", colour = G.C.BLUE})
+                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Its TV Time!", colour = G.C.BLUE})
             end
             return true
         end,
                             colour = G.C.BLUE,
                         extra = {
                             func = function()
-            local created_joker = false
-    if #G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit then
-        created_joker = true
-        G.GAME.joker_buffer = G.GAME.joker_buffer + 1
+            local created_joker = true
             G.E_MANAGER:add_event(Event({
                 func = function()
                     local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_popcorn' })
@@ -128,13 +118,13 @@ SMODS.Joker{ --Movie Time
                         
                         
                     end
-                    G.GAME.joker_buffer = 0
+                    
                     return true
                 end
             }))
-            end
+            
             if created_joker then
-                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "It s TV Time!", colour = G.C.BLUE})
+                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Its TV Time!", colour = G.C.BLUE})
             end
             return true
         end,

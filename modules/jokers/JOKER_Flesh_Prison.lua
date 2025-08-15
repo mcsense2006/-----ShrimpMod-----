@@ -24,6 +24,11 @@ SMODS.Joker{ --Flesh Prison
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "Shrimp",
+        code = "Shrimp",
+        concept = "Shrimp",
+    },
     loc_vars = function(self, info_queue, card)
             return {vars = { card.ability.extra.bosscount}}
     end,

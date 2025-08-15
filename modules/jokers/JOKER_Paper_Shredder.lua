@@ -9,13 +9,29 @@ SMODS.Joker{
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    config = { extra = { } },
+    config = {
+        extra = {
+            basediscardsperround = 0
+        }
+    },
     credit = {
     art = "Shrimp",
-    code = "",
+    code = "Shrimp",
     concept = "@andresirlo",
 },
     calculate = function(self, card, context)
+        if context.selling_card  and not context.blueprint then
+                return {
+                    func = function()
+                local current_play_size = G.GAME.starting_params.discard_limit
+                local target_play_size = G.GAME.round_resets.discards
+                local difference = target_play_size - current_play_size
+                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Play Size set to "..tostring(G.GAME.round_resets.discards), colour = G.C.BLUE})
+                SMODS.change_discard_limit(difference)
+                return true
+            end
+                }
+        end
     end,
 
     add_to_deck = function(self, card, from_debuff)

@@ -17,6 +17,11 @@ SMODS.Joker{ --Big Dragons
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "Shrimp",
+        code = "Shrimp",
+        concept = " u/a45wesley",
+    },
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
             if ((function()

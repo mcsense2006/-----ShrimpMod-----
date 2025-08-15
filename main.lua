@@ -1,5 +1,6 @@
 --------------------MOD CODE--------------------
------VERSION 1.0.0-----
+--                      If you're the creator of one or another content you see in this mod and you don't want it there, contact me (@marxense) on discord
+-----VERSION 1.0.1-----
 -- Sprites
 SMODS.Atlas {key = 'modicon',path = "icon.png",px = 32,py = 32}
 SMODS.Atlas{key = 'Jokers',path = 'Jokers.png',px = 71,py = 95}

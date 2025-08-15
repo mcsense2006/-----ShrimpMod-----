@@ -15,6 +15,11 @@ SMODS.Joker{
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "Shrimp",
+        code = "Shrimp",
+        concept = "Shrimp",
+    },
 
     calculate = function(self, card, context)
         if context.ending_shop and not context.blueprint then

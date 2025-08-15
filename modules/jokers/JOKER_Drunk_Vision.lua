@@ -12,7 +12,7 @@ SMODS.Joker{
     config = { extra = { } },
     credit = {
     art = "Shrimp",
-    code = "",
+    code = "Shrimp",
     concept = "@andresirlo",
 },
     calculate = function(self, card, context)

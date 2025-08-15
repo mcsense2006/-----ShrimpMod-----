@@ -85,13 +85,15 @@ return {
             j_shrimp_JOKER_Big_Dragons = {
                 name = 'Big Dragons',
                 text = {
-                    '{X:mult,C:white}X3{} mult is played hand contains at least 3 {C:attention}stone{}/{C:attention}steel{}/{C:attention}gold{} cards',
+                    '{X:mult,C:white}X3{} mult is played hand contains',
+                    'at least 3 {C:attention}stone{}/{C:attention}steel{}/{C:attention}gold{} cards',
                 }
             },
             j_shrimp_JOKER_Common_Ends = {
                 name = 'Common Ends',
                 text = {
-                    'This joker gains {C:mult}+2{} mult for each {C:attention}ace{} or {C:attention}face cards{} played',
+                    'This joker gains {C:mult}+2{} mult for each',
+                    '{C:attention}ace{} or {C:attention}face cards{} played',
                     '{C:inactive}(Currently {}{C:mult}+#1#{}{C:inactive} Mult){}',
                 }
             },
@@ -123,14 +125,16 @@ return {
             j_shrimp_JOKER_All_Terminals = { --modify code to message the upgrade
                 name = 'All Terminals',
                 text = {
-                    'gains {C:white,X:mult}X0.2{} mult each time a {C:attention}face{} or {C:attention}ace{} card is scored',
+                    'gains {C:white,X:mult}X0.2{} mult each time a',
+                    '{C:attention}face{} or {C:attention}ace{} card is scored',
                     '{C:inactive}(currently {}{C:white,X:mult}X#1#{} {C:inactive}mult){}'
                 }
             },
             j_shrimp_JOKER_Gay_Joker = {
                 name = 'Gay Joker',
                 text = {
-                    'Lose instantly if played hand contains a {C:attention}straight{}',
+                    'Lose instantly if played hand',
+                    'contains a {C:attention}straight{}',
                 }
             },
             j_shrimp_JOKER_Movie_Time = {
@@ -314,7 +318,8 @@ return {
             j_shrimp_JOKER_Glitched_Joker = {
                 name = 'Glitched Joker',
                 text = {
-                    '{C:mult}+15{} Mult if your hand contain no pairs',
+                    '{C:mult}+15{} Mult if your hand',
+                    'contain no {C:attention}pairs',
                     ' ',
                     '{C:inactive,E:1,s:0.85}Did not mean to play that, did you?{}',
                 }

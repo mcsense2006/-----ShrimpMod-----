@@ -18,6 +18,11 @@ SMODS.Joker{
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "",
+        code = "Shrimp",
+        concept = "",
+    },
 
     loc_vars = function(self, info_queue, card)
         return {vars = { card.ability.extra.planetcount}}

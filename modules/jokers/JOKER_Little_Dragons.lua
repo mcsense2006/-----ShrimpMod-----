@@ -17,6 +17,11 @@ SMODS.Joker{ --Little Dragons
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "Shrimp",
+        code = "Shrimp",
+        concept = " u/a45wesley",
+    },
     loc_vars = function(self, info_queue, card)
         return {vars = { card.ability.extra.actualmult}}
     end,

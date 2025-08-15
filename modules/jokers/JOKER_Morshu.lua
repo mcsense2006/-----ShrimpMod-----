@@ -19,7 +19,7 @@ SMODS.Joker{
     discovered = true,
     atlas = 'Jokers',
     credit = {
-        art = '',
+        art = 'Shrimp',
         code = 'Shrimp',
         concept = 'Shrimp',
     },

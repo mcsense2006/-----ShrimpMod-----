@@ -16,6 +16,11 @@ SMODS.Joker{ --Gay Joker
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = '@Steam_Master0',
+        code = 'Shrimp',
+        concept = 'Shrimp',
+    },
 
     set_ability = function(self, card, initial)
         card:set_eternal(true)

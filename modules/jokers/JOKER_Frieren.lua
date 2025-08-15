@@ -1,0 +1,32 @@
+SMODS.Joker{
+    name = "Frieren",
+    key = "JOKER_Frieren",
+    config = {
+        extra = {
+        }
+    },
+    pos = {x = 0, y = 4},
+    cost = 4,
+    rarity = 1,
+    blueprint_compat = false,
+    eternal_compat = true,
+    unlocked = true,
+    discovered = true,
+    atlas = 'Jokers',
+    credit = {
+        art = "",
+        code = "Shrimp",
+        concept = "@andresirlo ",
+    },
+
+    calculate = function(self, card, context)
+        if context.individual and context.cardarea == G.play and not context.blueprint then
+            if (context.other_card:get_id() == 14 or context.other_card:get_id() == 7) then
+                context.other_card:set_ability(G.P_CENTERS.m_lucky)
+                return {
+                    message = "Zoltraak!"
+                }
+            end
+        end
+    end
+}

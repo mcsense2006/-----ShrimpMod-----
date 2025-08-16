@@ -1,6 +1,6 @@
 SMODS.Tag {
     key = "TAG_Epic",
-    pos = { x = 0, y = 0 },
+    pos = { x = 1, y = 0 },
     apply = function(self, tag, context)
         if context.type == 'store_joker_create' then
             local card = SMODS.create_card {

@@ -1,4 +1,4 @@
-SMODS.Joker{ --Spirt Infusion
+SMODS.Joker{
     name = "Spirit Infusion",
     key = "JOKER_Spirit_Infusion",
     config = {

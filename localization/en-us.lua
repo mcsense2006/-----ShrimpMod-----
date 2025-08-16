@@ -21,6 +21,23 @@ return {
                     'Placeholder, 3rd row',
                 }
             },
+            j_shrimp_JOKER_The_Big_Shot = {
+                name = 'The Big Shot',
+                text = {
+                    'Scoring {C:dark_edition}foil{} cards',
+                    'gives {C:chips}1997{} chips each',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}Now\'s your chance to be a BIG SHOT{}'
+                }
+            },
+            j_shrimp_JOKER_Appetizer = {
+                name = 'Appetizer',
+                text = {
+                    'When NOT playing your most {C:attention}played hand{},',
+                    'gain {C:white,X:mult}X0.1{} mult',
+                    '{C:inactive}(currently{} {C:white,X:mult}X#1#{}{C:inactive} mult)'
+                }
+            },
             j_shrimp_JOKER_Package = {
                 name = 'Package',
                 text = {
@@ -32,7 +49,9 @@ return {
                 name = 'Clairvoyance',
                 text = {
                     'Defeating a boss blind creates',
-                    'an {C:attention}Charm tag{}'
+                    'an {C:attention}Charm tag{}',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}I see...you will lose on the wheel of fortune',
                 }
             },
             j_shrimp_JOKER_Broken_Limbs = {
@@ -40,7 +59,7 @@ return {
                 text = {
                     'Gains {X:mult,C:white}X0.5{} Mult per hand used this round',
                     '{C:inactive}(Resets every round)',
-                    '{C:inactive}(Currently{X:mult,C:white} X#1#{} {C:inactive}Mult){}',
+                    '{C:inactive}(Currently {X:mult,C:white}X#1#{} {C:inactive}Mult){}',
                 }
             },
             j_shrimp_JOKER_Flesh_Panopticon = {
@@ -58,8 +77,8 @@ return {
             j_shrimp_JOKER_Sisyphus_Prime = {
                 name = 'Sisyphus Prime',
                 text = {
-                    'First scoring card retriggers 8 times',
-                    'Gains X0.25 mult per hand played',
+                    'Last {C:attention}scoring{} card retriggers {C:attention}8 times{}',
+                    'Gains {C:white,X:mult}X0.1{} mult per hand played',
                     '{C:inactive}(Currently {C:white,X:mult}X#1#{}{C:inactive} mult){}',
                 }
             },
@@ -135,13 +154,16 @@ return {
                 text = {
                     'Lose instantly if played hand',
                     'contains a {C:attention}straight{}',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}don\'t you dare playing that hand{}',
                 }
             },
             j_shrimp_JOKER_Movie_Time = {
                 name = 'Movie Time',
                 text = {
                     'Creates 5 {C:attention}popcorn{} when sold',
-                    '{C:inactive}Acording to the current joker slots{}',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}Say it with him, folks!'
                 }
             },
             j_shrimp_JOKER_Little_Dragons = {
@@ -195,6 +217,8 @@ return {
                     'random {C:attention}consumable{} in your possession',
                     'at the end of {C:attention}shop{}',
                     'destroys itself at the 5th trigger',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}Yes coffee or no coffee?',
                 }
             },
             j_shrimp_JOKER_Morshu = {
@@ -214,6 +238,9 @@ return {
                 text = {
                     'Each {C:attention}Lucky cards{} held in',
                     'hand grants {C:mult}+4{} mult and {C:money}1$',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}I may or may not trigger if you keep',
+                    '{C:inactive,E:1,s:0.85}these lucky cards in hand...',
                 }
             },
             j_shrimp_JOKER_Spirit_Infusion = {
@@ -232,6 +259,9 @@ return {
                     'mult per {C:spectral}spectral{} {C:attention}card',
                     'used',
                     '{C:inactive}(Currently{} {C:white,X:mult}X#1#{}{C:inactive} mult){}',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}*punches on the glass*',
+                    '{C:inactive,E:1,s:0.85}let me ouuuut'
                 }
             },
             j_shrimp_JOKER_Canva = {
@@ -246,6 +276,8 @@ return {
                 text = {
                     'Gives an {C:attention}Ethereal Tag{}',
                     'at the end of the round',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}Wanna see a magic trick ?',
                 }
             },
             j_shrimp_JOKER_Soul_of_the_Galaxy = {
@@ -254,7 +286,9 @@ return {
                     'Creates a {C:spectral}spectral{} {C:attention}card{}',
                     'each time 5 {C:planet}planets{}',
                     '{C:attention}cards{} are used',
-                    '{C:inactive}Currently [#1#]'
+                    '{C:inactive}[#1#]{}',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}*white noice*'
                 }
             },
             j_shrimp_JOKER_Room_Temperature = {
@@ -263,6 +297,8 @@ return {
                     'Gain {C:white,X:mult}X0.5{} mult per every',
                     '{C:attention}Joker{} slot filled',
                     '{C:inactive}(Currently {C:white,X:mult}X#1#{}{C:inactive}){}',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}It\'s starting to be crowded isn\'t it?{}',
                 }
             },
             j_shrimp_JOKER_Frieren ={
@@ -308,9 +344,9 @@ return {
                 name = 'Static Clown',
                 text = {
                     'Everytime a card with an',
-                    'edition or enchantment is scored,',
-                    'there is a {C:green}1 in 3{} chance of coping',
-                    'the card to your hand',
+                    '{C:attention}edition{} or {C:attention}enchantment{} is scored,',
+                    'there is a {C:green}1 in 3{} chance of copying',
+                    'the {C:attention}scored{} card to your hand',
                     ' ',
                     '{C:inactive,E:1,s:0.85}It is just noice... or is it?{}',
                 }
@@ -478,7 +514,9 @@ return {
             j_shrimp_JOKER_Paper_Shredder = {
                 name = 'Paper Shredder',
                 text = {
-                    'you can {C:red}discard{} everything'
+                    'you can {C:red}discard{} everything',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}*shreds*{}',
                 }
             },
             j_shrimp_JOKER_Feast_Or_Famine = {

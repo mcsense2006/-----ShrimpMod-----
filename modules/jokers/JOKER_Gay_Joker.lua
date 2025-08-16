@@ -1,4 +1,4 @@
-SMODS.Joker{ --Gay Joker
+SMODS.Joker{
     key = "JOKER_Gay_Joker",
     config = {
         extra = {
@@ -21,11 +21,12 @@ SMODS.Joker{ --Gay Joker
         code = 'Shrimp',
         concept = 'Shrimp',
     },
-
     set_ability = function(self, card, initial)
         card:set_eternal(true)
     end,
-
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Meme', HEX("B00B69"), HEX("69B00B"), 1 )
+    end,
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
             if next(context.poker_hands["Straight"]) then

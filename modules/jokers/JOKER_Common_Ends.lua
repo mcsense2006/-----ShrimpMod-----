@@ -1,4 +1,4 @@
-SMODS.Joker{ --Common Ends
+SMODS.Joker{
     key = "JOKER_Common_Ends",
     config = {
         extra = {
@@ -7,8 +7,8 @@ SMODS.Joker{ --Common Ends
         }
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 4,
+        y = 5
     },
     cost = 5,
     rarity = 2,
@@ -21,8 +21,11 @@ SMODS.Joker{ --Common Ends
     credit = {
         art = "Shrimp",
         code = "Shrimp",
-        concept = " u/a45wesley",
+        concept = "u/a45wesley",
     },
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Mahjong Serie', G.C.WHITE, HEX("4BC292"), 1 )
+    end,
     loc_vars = function(self, info_queue, card)
             return {vars = { card.ability.extra.mult}}
     end,

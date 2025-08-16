@@ -1,4 +1,4 @@
-SMODS.Joker{ --Landslide
+SMODS.Joker{
     name = "Landslide",
     key = "JOKER_Landslide",
     config = {

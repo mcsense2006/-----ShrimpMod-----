@@ -1,4 +1,4 @@
-SMODS.Joker{ --New Joker
+SMODS.Joker{
     name = "Colorblind Joker",
     key = "JOKER_Colorblind_Joker",
     config = {

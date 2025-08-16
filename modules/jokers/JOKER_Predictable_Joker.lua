@@ -11,7 +11,7 @@ SMODS.Joker{
     credit = {
         art = 'Shrimp',
         code = 'Shrimp',
-        concept = '',
+        concept = 'Shrimp',
     },
     pos = {
         x = 7,

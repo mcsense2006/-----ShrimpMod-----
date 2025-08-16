@@ -25,7 +25,9 @@ SMODS.Joker{
     loc_vars = function(self, info_queue, card)
         return {vars = { card.ability.extra.gain, card.ability.extra.xchips, localize(card.ability.extra.hand, 'poker_hands') }}
     end,
-
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Sousou no Frieren', HEX("94528C"), G.C.White, 1 )
+    end,
     calculate = function(self, card, context)
         -- at end of round, if you didn't lose
         if context.end_of_round and context.game_over == false and context.main_eval and not context.blueprint then

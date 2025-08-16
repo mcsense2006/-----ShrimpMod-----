@@ -1,4 +1,4 @@
-SMODS.Joker{ --All Honors
+SMODS.Joker{
     key = "JOKER_All_Honors",
     config = {
         extra = {
@@ -20,8 +20,11 @@ SMODS.Joker{ --All Honors
     credit = {
         art = "Shrimp",
         code = "Shrimp",
-        concept = " u/a45wesley",
+        concept = "u/a45wesley",
     },
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Mahjong Serie', G.C.WHITE, HEX("4BC292"), 1 )
+    end,
     loc_vars = function(self, info_queue, card)
             return {vars = { card.ability.extra.mult}}
     end,

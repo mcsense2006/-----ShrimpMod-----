@@ -8,8 +8,12 @@ SMODS.Joker{
         }
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 2,
+        y = 5
+    },
+    soul_pos = {
+        x = 3,
+        y = 5
     },
     cost = 6,
     rarity = 3,

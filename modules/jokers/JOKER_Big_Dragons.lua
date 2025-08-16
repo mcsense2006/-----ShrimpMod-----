@@ -1,4 +1,4 @@
-SMODS.Joker{ --Big Dragons
+SMODS.Joker{
     key = "JOKER_Big_Dragons",
     config = {
         extra = {
@@ -20,8 +20,11 @@ SMODS.Joker{ --Big Dragons
     credit = {
         art = "Shrimp",
         code = "Shrimp",
-        concept = " u/a45wesley",
+        concept = "u/a45wesley",
     },
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Mahjong Serie', G.C.WHITE, HEX("4BC292"), 1 )
+    end,
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
             if ((function()

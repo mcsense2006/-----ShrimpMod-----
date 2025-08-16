@@ -8,7 +8,7 @@ SMODS.Joker{
         }
     },
     pos = {
-        x = 6,
+        x = 4,
         y = 4
     },
     soul_pos = {
@@ -31,7 +31,9 @@ SMODS.Joker{
         code = "Shrimp",
         concept = "Shrimp",
     },
-
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Ultrakill', HEX("8F0300"), G.C.White, 1 )
+    end,
     calculate = function(self, card, context)
         if context.repetition and context.cardarea == G.play  then
                 return {

@@ -1,4 +1,4 @@
-SMODS.Joker{ --yes i know this is terrible but its quite funny too
+SMODS.Joker{ --yes i know this is some terrible code but its quite funny too (i have no idea how to make repeats in lua)
     name = "Pangoreuil",
     key = "JOKER_L_Pangoreuil",
     pos = {x = 0, y = 3},

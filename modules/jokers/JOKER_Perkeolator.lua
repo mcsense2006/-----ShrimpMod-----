@@ -20,7 +20,9 @@ SMODS.Joker{
         code = "Shrimp",
         concept = "Shrimp",
     },
-
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Meme', HEX("B00B69"), HEX("69B00B"), 1 )
+    end,
     calculate = function(self, card, context)
         if context.ending_shop and not context.blueprint then
             if (card.ability.extra.trigger or 0) == 6 then

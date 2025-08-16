@@ -18,7 +18,9 @@ SMODS.Joker{
         code = "Shrimp",
         concept = "@andresirlo",
     },
-
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Sousou no Frieren', HEX("94528C"), G.C.White, 1 )
+    end,
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play and not context.blueprint then
             if (context.other_card:get_id() == 14 or context.other_card:get_id() == 7) then

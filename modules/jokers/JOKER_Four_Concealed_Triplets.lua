@@ -21,10 +21,13 @@ SMODS.Joker{
     credit = {
         art = "Shrimp",
         code = "Shrimp",
-        concept = " u/a45wesley",
+        concept = "u/a45wesley",
     },
     loc_vars = function(self, info_queue, card)
         return {vars = { card.ability.extra.counttriplet}}
+    end,
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Mahjong Serie', G.C.WHITE, HEX("4BC292"), 1 )
     end,
 
     calculate = function(self, card, context)

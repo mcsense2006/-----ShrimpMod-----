@@ -1,4 +1,4 @@
-SMODS.Joker{ --Steak
+SMODS.Joker{
     key = "JOKER_Steak",
     config = {
         extra = {
@@ -6,8 +6,8 @@ SMODS.Joker{ --Steak
         }
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 7,
+        y = 5
     },
     cost = 6,
     rarity = 3,

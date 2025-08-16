@@ -1,4 +1,4 @@
-SMODS.Joker{ --Movie Time
+SMODS.Joker{
     key = "JOKER_Movie_Time",
     config = {
         extra = {
@@ -7,7 +7,7 @@ SMODS.Joker{ --Movie Time
     },
     pos = {
         x = 0,
-        y = 0
+        y = 6
     },
     cost = 6,
     rarity = 3,
@@ -18,11 +18,13 @@ SMODS.Joker{ --Movie Time
     discovered = true,
     atlas = 'Jokers',
     credit = {
-        art = "",
+        art = "Shrimp",
         code = "Shrimp",
         concept = "Shrimp",
     },
-
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Deltarune', G.C.DARK_EDITION, G.C.WHITE, 1 )
+    end,
     calculate = function(self, card, context)
         if context.selling_self  and not context.blueprint then
                 return {

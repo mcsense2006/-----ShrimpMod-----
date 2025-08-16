@@ -26,7 +26,9 @@ if tonumber(SMODS.version:sub(12):sub(1, -2)) >= 706 then
         loc_vars = function(self, info_queue, card)
             return {vars = { card.ability.extra.gain, card.ability.extra.xmult }}
         end,
-
+        set_badges = function(self, card, badges)
+                badges[#badges+1] = create_badge('Meme', HEX("B00B69"), HEX("69B00B"), 1 )
+        end,
         calculate = function(self, card, context)
             -- this is the thing from the development version
             -- context that triggers when any probability fails

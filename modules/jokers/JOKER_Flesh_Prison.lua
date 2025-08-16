@@ -1,4 +1,4 @@
-SMODS.Joker{ --Flesh Prison
+SMODS.Joker{
     key = "JOKER_Flesh_Prison",
     config = {
         extra = {
@@ -32,7 +32,9 @@ SMODS.Joker{ --Flesh Prison
     loc_vars = function(self, info_queue, card)
             return {vars = { card.ability.extra.bosscount}}
     end,
-
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Ultrakill', HEX("8F0300"), G.C.White, 1 )
+    end,
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
             if next(context.poker_hands["Flush"]) then

@@ -1,6 +1,14 @@
 return {
     descriptions = {
-        Back={},
+        Back={
+            b_shrimp_DECK_Mahjong = {
+                name = 'Mahjong Deck',
+                text = {
+                    'Repleace all cards with Mahjong cards',
+                    'WIP'
+                }
+            },
+        },
         Blind={
             bl_shrimp_BLIND_The_Rune = {
                 name = 'The Rune',
@@ -639,8 +647,20 @@ return {
         poker_hands={},
         quips={},
         ranks={},
-        suits_plural={},
-        suits_singular={},
+        suits_plural={
+            shrimp_Pin = 'Pin',
+            shrimp_Sou = 'Sou',
+            shrimp_Man = 'Man',
+            shrimp_Winds = 'Winds',
+            shrimp_Dragons = 'Dragons',
+        },
+        suits_singular={
+            shrimp_Pin = 'Pin',
+            shrimp_Sou = 'Sou',
+            shrimp_Man = 'Man',
+            shrimp_Winds = 'Wind',
+            shrimp_Dragons = 'Dragon',
+        },
         tutorial={},
         v_dictionary={
             a_emult = "^#1# Mult",

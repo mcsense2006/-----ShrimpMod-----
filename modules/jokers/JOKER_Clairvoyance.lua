@@ -1,7 +1,7 @@
 SMODS.Joker{
     key = 'JOKER_Clairvoyance',
     atlas = 'Jokers',
-    pos = {x = 0, y = 0},
+    pos = {x = 5, y = 6},
     cost = 3,
     rarity = 1,
     blueprint_compat = true,

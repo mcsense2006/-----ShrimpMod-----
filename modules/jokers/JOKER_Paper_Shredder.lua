@@ -19,8 +19,18 @@ SMODS.Joker{
     code = "Shrimp",
     concept = "@andresirlo",
 },
+    in_pool = function(self, args)
+          return (
+          not args 
+            
+          or args.source == 'sho' or args.source == 'buf' or args.source == 'jud' or args.source == 'rif' or args.source == 'rta' or args.source == 'sou' or args.source == 'uta' or args.source == 'wra'
+          )
+          and true
+      end
+    ,
+
     calculate = function(self, card, context)
-        if context.selling_card  and not context.blueprint then
+        if context.selling_self  and not context.blueprint then
                 return {
                     func = function()
                 local current_play_size = G.GAME.starting_params.discard_limit

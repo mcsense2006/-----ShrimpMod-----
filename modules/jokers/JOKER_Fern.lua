@@ -1,7 +1,7 @@
 SMODS.Joker{
     key = 'JOKER_Fern',
     atlas = 'Jokers',
-    pos = {x = 0, y = 0},
+    pos = {x = 4, y = 6},
     cost = 8,
     rarity = 3,
     blueprint_compat = true,

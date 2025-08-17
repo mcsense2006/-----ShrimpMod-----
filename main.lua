@@ -2,11 +2,13 @@
 --                      If you're the creator of one or another content you see in this mod and you don't want it there, contact me (@marxense) on discord
 -----VERSION 1.0.1-----
 -- Sprites
-SMODS.Atlas {key = 'modicon',path = "icon.png",px = 32,py = 32}
+SMODS.Atlas{key = 'modicon',path = "icon.png",px = 32,py = 32}
 SMODS.Atlas{key = 'Jokers',path = 'Jokers.png',px = 71,py = 95}
-SMODS.Atlas {key = 'blind_chips',path = 'BlindChips.png',atlas_table = 'ANIMATION_ATLAS',frames = 21,px = 34,py = 34}
+SMODS.Atlas{key = 'blind_chips',path = 'BlindChips.png',atlas_table = 'ANIMATION_ATLAS',frames = 21,px = 34,py = 34}
 SMODS.Atlas{key = 'Tarot',path = 'Tarot.png',px = 65,py = 95}
-SMODS.Atlas {key = 'Tags',path = 'Tags.png',px = 34,py = 34}
+SMODS.Atlas{key = 'Tags',path = 'Tags.png',px = 34,py = 34}
+SMODS.Atlas{key = 'Mahjong_Cards',path = 'Mahjong_Cards.png',px = 71,py = 95}
+SMODS.Atlas{ key = "Mahjong_UI", path = "Mahjong_UI.png", px = 18, py = 18 }
 -- Custom colors
 loc_colour('red') 
 G.ARGS.LOC_COLOURS['Epic'] = HEX("01A6AF")
@@ -246,3 +248,6 @@ assert(SMODS.load_file("./modules/planets/PLANET_Brown_Dwarf.lua"))()
 --Load Tags
 --assert(SMODS.load_file("./modules/tags/TAG_Epic.lua"))()
 ----------------------------------------------------------------------------------------------------------------------
+--Load mahjong related things
+--assert(SMODS.load_file("./modules/suits/SUIT_Mahjong.lua"))()
+--assert(SMODS.load_file("./modules/deck/DECK_Mahjong.lua"))()

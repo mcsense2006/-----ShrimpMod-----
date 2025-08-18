@@ -17,7 +17,7 @@ SMODS.Joker{
     credit = {
         art = "Shrimp",
         code = "Shrimp",
-        concept = "",
+        concept = "<Credits would be appreciated>",
     },
 
     loc_vars = function(self, info_queue, card)

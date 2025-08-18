@@ -157,7 +157,7 @@ SMODS.current_mod.extra_tabs = function()
                                 {
                                     n = G.UIT.T,
                                     config = {
-                                        text = "Concepting: Credit for each additions are put on them, planet inspired by u/Cuddly_Corvid",
+                                        text = "Concepting: Credit for each additions are put on them, planets inspired by u/Cuddly_Corvid",
                                         shadow = false,
                                         scale = scale * 0.6,
                                         colour = G.C.BLACK
@@ -185,6 +185,18 @@ assert(SMODS.load_file("./modules/jokers/JOKER_Frieren.lua"))()
 assert(SMODS.load_file("./modules/jokers/JOKER_Gay_Joker.lua"))()
 --assert(SMODS.load_file("./modules/jokers/JOKER_Feast_Or_Famine.lua"))()
 assert(SMODS.load_file("./modules/jokers/JOKER_Clairvoyance.lua"))()
+assert(SMODS.load_file("./modules/jokers/JOKER_Social_Ladder.lua"))()
+            --hand jokers
+assert(SMODS.load_file("./modules/jokers/JOKER_Goofy_Joker.lua"))()
+assert(SMODS.load_file("./modules/jokers/JOKER_Merry_Joker.lua"))()
+assert(SMODS.load_file("./modules/jokers/JOKER_Loony_Joker.lua"))()
+assert(SMODS.load_file("./modules/jokers/JOKER_Zesty_Joker.lua"))()
+
+assert(SMODS.load_file("./modules/jokers/JOKER_Witty_Joker.lua"))()
+assert(SMODS.load_file("./modules/jokers/JOKER_Shrewd_Joker.lua"))()
+assert(SMODS.load_file("./modules/jokers/JOKER_Brainy_Joker.lua"))()
+assert(SMODS.load_file("./modules/jokers/JOKER_Savvy_Joker.lua"))()
+
 --Load uncommon jokers
 assert(SMODS.load_file("./modules/jokers/JOKER_Oops_all_1s.lua"))()
 assert(SMODS.load_file("./modules/jokers/JOKER_Jonkler.lua"))()
@@ -216,8 +228,13 @@ assert(SMODS.load_file("./modules/jokers/JOKER_All_Honors.lua"))()
 assert(SMODS.load_file("./modules/jokers/JOKER_All_Green.lua"))()
 assert(SMODS.load_file("./modules/jokers/JOKER_Appetizer.lua"))()
 assert(SMODS.load_file("./modules/jokers/JOKER_Package.lua"))()
+assert(SMODS.load_file("./modules/jokers/JOKER_The_Solo.lua"))()
+assert(SMODS.load_file("./modules/jokers/JOKER_The_Partners.lua"))()
+assert(SMODS.load_file("./modules/jokers/JOKER_The_Feast.lua"))()
+assert(SMODS.load_file("./modules/jokers/JOKER_The_Royal.lua"))()
+assert(SMODS.load_file("./modules/jokers/JOKER_Canva.lua"))()
+--assert(SMODS.load_file("./modules/jokers/JOKER_Sketch.lua"))()
 --Load epic jokers
---assert(SMODS.load_file("./modules/jokers/JOKER_Canva.lua"))()
 assert(SMODS.load_file("./modules/jokers/JOKER_The_Big_Shot.lua"))()
 assert(SMODS.load_file("./modules/jokers/JOKER_Morshu.lua"))()
 assert(SMODS.load_file("./modules/jokers/JOKER_Flesh_Prison.lua"))()

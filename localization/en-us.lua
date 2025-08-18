@@ -29,6 +29,109 @@ return {
                     'Placeholder, 3rd row',
                 }
             },
+            j_shrimp_JOKER_The_Partners = {
+                name = 'The Partners',
+                text = {
+                    '{C:white,X:mult}X2.5{} mult if played',
+                    'hand contains',
+                    'a {C:attention}two pairs'
+                }
+            },
+            j_shrimp_JOKER_Savvy_Joker = {
+                name = 'Savvy Joker',
+                text = {
+                    '{C:chips}+180{} chips if played',
+                    'hand contains',
+                    'a {C:attention}straight flush'
+                }
+            },
+            j_shrimp_JOKER_Zesty_Joker = {
+                name = 'Zesty Joker',
+                text = {
+                    '{C:mult}+22{} mult if played',
+                    'hand contains',
+                    'a{C:attention} straight flush'
+                }
+            },
+            j_shrimp_JOKER_The_Royal = {
+                name = 'The Royal',
+                text = {
+                    '{C:white,X:mult}X4{} mult if played',
+                    'hand contains',
+                    'a{C:attention} straight flush'
+                }
+            },
+            j_shrimp_JOKER_Brainy_Joker = {
+                name = 'Brainy Joker',
+                text = {
+                    '{C:chips}+110{} chips if played',
+                    'hand contains',
+                    'a {C:attention}four of a kind{}'
+                }
+            },
+            j_shrimp_JOKER_Loony_Joker = {
+                name = 'Loony Joker',
+                text = {
+                    '{C:mult}+15{} mult if played',
+                    'hand contains',
+                    'a {C:attention}four of a kind{}'
+                }
+            },
+            j_shrimp_JOKER_The_Feast = {
+                name = 'The Feast',
+                text = {
+                    '{C:white,X:mult}X2.5{} mult if played',
+                    'hand contains',
+                    'a {C:attention}full house{}'
+                }
+            },
+            j_shrimp_JOKER_Merry_Joker = {
+                name = 'Merry Joker',
+                text = {
+                    '{C:mult}+11{} mult if played',
+                    'hand contains',
+                    'a {C:attention}full house{}'
+                }
+            },
+            j_shrimp_JOKER_Shrewd_Joker = {
+                name = 'Shrewd Joker',
+                text = {
+                    '{C:chips}+90{} chips if played',
+                    'hand contains',
+                    'a {C:attention}full house{}'
+                }
+            },
+            j_shrimp_JOKER_Goofy_Joker = {
+                name = 'Goofy Joker',
+                text = {
+                    '{C:mult}+6{} mult if played',
+                    'hand is',
+                    'a {C:attention}high card',
+                }
+            },
+            j_shrimp_JOKER_Witty_Joker = {
+                name = 'Witty Joker',
+                text = {
+                    '{C:chips}+25{} chips if played',
+                    'hand is',
+                    'a{C:attention}high card',
+                }
+            },
+            j_shrimp_JOKER_The_Solo = {
+                name = 'The Solo',
+                text = {
+                    '{C:white,X:mult}X1.5{} mult if played',
+                    'hand contains',
+                    'a {C:attention}high card{}',
+                }
+            },
+            j_shrimp_JOKER_Social_Ladder = {
+                name = 'Social Ladder',
+                text = {
+                    'Increase your least {C:attention}played hand{} level by 2',
+                    'at the end of round'
+                }
+            },
             j_shrimp_JOKER_The_Big_Shot = {
                 name = 'The Big Shot',
                 text = {
@@ -276,7 +379,13 @@ return {
                 name = 'Canva',
                 text = {
                     'Copies the ability of the {C:attention}Joker{}',
-                    'to the left and to the right', --doesn't work
+                    'to the left'
+                }
+            },
+            j_shrimp_JOKER_Sketch = {
+                name = 'Sketch',
+                text = {
+                    'Copies the ability of rightmost {C:attention}Joker{}'
                 }
             },
             j_shrimp_JOKER_Spiritist = {

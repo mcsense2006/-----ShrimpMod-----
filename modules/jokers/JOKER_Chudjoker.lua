@@ -22,7 +22,7 @@ SMODS.Joker{
     credit = {
         art = "",
         code = "Shrimp",
-        concept = "",
+        concept = "<Credits would be appreciated>",
     },
     set_badges = function(self, card, badges)
              badges[#badges+1] = create_badge('Meme', HEX("B00B69"), HEX("69B00B"), 1 )

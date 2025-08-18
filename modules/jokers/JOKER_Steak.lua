@@ -18,9 +18,9 @@ SMODS.Joker{
     discovered = true,
     atlas = 'Jokers',
     credit = {
-        art = "",
+        art = "Shrimp",
         code = "Shrimp",
-        concept = "",
+        concept = "<Credits would be appreciated>",
     },
 
     calculate = function(self, card, context)

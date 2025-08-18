@@ -21,6 +21,11 @@ SMODS.Joker{
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    credit = {
+        art = "Shrimp",
+        code = "Shrimp",
+        concept = "@xzid3n",
+    },
 
     set_ability = function(self, card, initial)
         card:set_edition("e_foil", true)

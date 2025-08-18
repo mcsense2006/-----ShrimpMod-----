@@ -10,7 +10,7 @@ SMODS.Joker{
     credit = {
         art = '',
         code = 'Shrimp',
-        concept = '',
+        concept = '<Credits would be appreciated>',
     },
     pos = {
         x = 0,

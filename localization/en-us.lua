@@ -114,7 +114,7 @@ return {
                 text = {
                     '{C:chips}+25{} chips if played',
                     'hand is',
-                    'a{C:attention}high card',
+                    'a {C:attention}high card',
                 }
             },
             j_shrimp_JOKER_The_Solo = {
@@ -128,8 +128,11 @@ return {
             j_shrimp_JOKER_Social_Ladder = {
                 name = 'Social Ladder',
                 text = {
-                    'Increase your least {C:attention}played hand{} level by 2',
-                    'at the end of round'
+                    'Increase your least',
+                    '{C:attention}played hand{} level by 2',
+                    'at the end of round',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}And i climb{}'
                 }
             },
             j_shrimp_JOKER_The_Big_Shot = {
@@ -144,7 +147,8 @@ return {
             j_shrimp_JOKER_Appetizer = {
                 name = 'Appetizer',
                 text = {
-                    'When NOT playing your most {C:attention}played hand{},',
+                    'When NOT playing your most',
+                    '{C:attention}played hand{},',
                     'gain {C:white,X:mult}X0.1{} mult',
                     '{C:inactive}(currently{} {C:white,X:mult}X#1#{}{C:inactive} mult)'
                 }
@@ -159,18 +163,22 @@ return {
             j_shrimp_JOKER_Clairvoyance = {
                 name = 'Clairvoyance',
                 text = {
-                    'Defeating a boss blind creates',
-                    'an {C:attention}Charm tag{}',
+                    'Defeating a boss blind',
+                    'creates a {C:attention}Charm tag{}',
                     ' ',
-                    '{C:inactive,E:1,s:0.85}I see...you will lose on the wheel of fortune',
+                    '{C:inactive,E:1,s:0.85}I see...you will{}',
+                    '{C:inactive,E:1,s:0.85}lose on the wheel of fortune',
                 }
             },
             j_shrimp_JOKER_Broken_Limbs = {
                 name = 'Broken Limbs',
                 text = {
-                    'Gains {X:mult,C:white}X0.5{} Mult per hand used this round',
+                    'Gains {X:mult,C:white}X0.5{} Mult per',
+                    '{C:attention}hand{} used this round',
                     '{C:inactive}(Resets every round)',
                     '{C:inactive}(Currently {X:mult,C:white}X#1#{} {C:inactive}Mult){}',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}Yeouch',
                 }
             },
             j_shrimp_JOKER_Flesh_Panopticon = {
@@ -181,7 +189,7 @@ return {
                     '{C:inactive}(Currently {}{C:white,X:chips}X#1#{} {C:inactive}chips){}',
                     ' ',
                     '{E:2,s:0.85}If you use 10 consumables this run, sell this',
-                    '{E:2,s:0.85}card to summon {C:Prime}Sisyphus Prime{}',
+                    '{E:2,s:0.85}card to summon{} {C:Prime,E:2,s:0.85}Sisyphus Prime{}',
                     '{C:inactive}[#2#]{}',
                 }
             },
@@ -196,7 +204,7 @@ return {
             j_shrimp_JOKER_Minos_Prime = {
                 name = 'Minos Prime',
                 text = {
-                    'Retrigers all playing cards twice,',
+                    'Retrigers all {C:attention}playing cards{} twice,',
                     'Gains {X:mult,C:white}X0.5{} mult per boss blind defeated',
                     '{C:inactive}(Currently {C:white,X:mult}X#1#{}{C:inactive} mult){}',
                 }
@@ -208,21 +216,21 @@ return {
                     'played hand is a {C:attention}flush{}.',
                     ' ',
                     '{E:2,s:0.85}If you defeat 3 boss blinds in 1 hand each,',
-                    '{E:2,s:0.85}sell this card to summon {C:Prime}Minos Prime{}',
+                    '{E:2,s:0.85}sell this card to summon{} {C:Prime,E:2,s:0.85}Minos Prime{}',
                     '{C:inactive}[#1#]{}',
                 }
             },
             j_shrimp_JOKER_Big_Dragons = {
                 name = 'Big Dragons',
                 text = {
-                    '{X:mult,C:white}X3{} mult is played hand contains',
+                    '{X:mult,C:white}X3{} mult if {C:attention}played hand{} contains',
                     'at least 3 {C:attention}stone{}/{C:attention}steel{}/{C:attention}gold{} cards',
                 }
             },
             j_shrimp_JOKER_Common_Ends = {
                 name = 'Common Ends',
                 text = {
-                    'This joker gains {C:mult}+2{} mult for each',
+                    'Gains {C:mult}+2{} mult for each',
                     '{C:attention}ace{} or {C:attention}face cards{} played',
                     '{C:inactive}(Currently {}{C:mult}+#1#{}{C:inactive} Mult){}',
                 }
@@ -240,14 +248,16 @@ return {
             j_shrimp_JOKER_All_Green = {
                 name = 'All Green',
                 text = {
-                    'gains {C:white,X:mult}X1{} mult per {C:clubs}club{} {C:attention}flush{} played',
-                    '{C:inactive}(currently{}{C:white,X:mult} X#1#{C:inactive}){}',
+                    'gains {C:white,X:mult}X1{} mult per',
+                    '{C:clubs}club{} {C:attention}flush{} played',
+                    '{C:inactive}(currently{} {C:white,X:mult} X#1# {C:inactive}mult){}',
                 }
             },
             j_shrimp_JOKER_Four_Concealed_Triplets = {
                 name = 'Four Concealed Triplets',
                 text = {
-                    '{C:white,X:mult}X4{} mult each time 4 {C:attention}three of a kind{} is played',
+                    '{C:white,X:mult}X4{} mult each time 4',
+                    '{C:attention}three of a kind{} is played',
                     '(resets on discard)',
                     '{C:inactive}[#1#]{}',
                 }
@@ -263,7 +273,8 @@ return {
             j_shrimp_JOKER_Gay_Joker = {
                 name = 'Gay Joker',
                 text = {
-                    'Lose instantly if played hand',
+                    '{C:red}Lose instantly{} if',
+                    '{C:attention}played hand{}',
                     'contains a {C:attention}straight{}',
                     ' ',
                     '{C:inactive,E:1,s:0.85}don\'t you dare playing that hand{}',
@@ -273,6 +284,7 @@ return {
                 name = 'Movie Time',
                 text = {
                     'Creates 5 {C:attention}popcorn{} when sold',
+                    '(may overflow)',
                     ' ',
                     '{C:inactive,E:1,s:0.85}Say it with him, folks!'
                 }
@@ -280,7 +292,7 @@ return {
             j_shrimp_JOKER_Little_Dragons = {
                 name = 'Little Dragons',
                 text = {
-                    'gains {C:mult}+5{} mult is played hand contains',
+                    'gains {C:mult}+5{} mult if {C:attention}played hand{} contains',
                     'at least 2 {C:attention}stone{}/{C:attention}steel{}/{C:attention}gold{} cards',
                     '{C:inactive}(Currently {C:mult}+#1#{} {C:inactive}mult){}'
 
@@ -324,10 +336,10 @@ return {
                 name = 'Perkeolator',
                 text = {
                     '{C:green}1 in 2{} chance of',
-                    'creating a negative copy of a',
+                    'creating a {C:dark_edition}negative{} copy of a',
                     'random {C:attention}consumable{} in your possession',
                     'at the end of {C:attention}shop{}',
-                    'destroys itself at the 5th trigger',
+                    '{C:red}selfdestruct{} at the 5th trigger',
                     ' ',
                     '{C:inactive,E:1,s:0.85}Yes coffee or no coffee?',
                 }
@@ -336,7 +348,7 @@ return {
                 name = 'Morshu',
                 text = {
                     '{C:green}1 in 2{} chance of creating',
-                    '5 random negative {C:attention}consumables{}',
+                    '5 random {C:dark_edition}negative{} {C:attention}consumables{}',
                     'at the end of the shop,',
                     'steals {C:money}5${} from you',
                     ' ',
@@ -361,6 +373,8 @@ return {
                     '{C:spectral}spectral{} {C:attention}cards{} after a',
                     '{C:attention}blind{} is selected but',
                     'makes them {C:attention}3{} times bigger',
+                    ' ',
+                    '{C:inactive,E:1,s:0.85}Buble'
                 }
             },
             j_shrimp_JOKER_Soul_Keeper = {
@@ -474,13 +488,14 @@ return {
                     '{C:mult}+15{} Mult if your hand',
                     'contain no {C:attention}pairs',
                     ' ',
-                    '{C:inactive,E:1,s:0.85}Did not mean to play that, did you?{}',
+                    '{C:inactive,E:1,s:0.85}Did not mean to play that,{}',
+                    '{C:inactive,E:1,s:0.85}did you?{}',
                 }
             },
             j_shrimp_JOKER_Jonkler = {
                 name = 'Jonkler',
                 text = {
-                    'When any {C:attention}listed {C:green}probability{}',
+                    'When any {C:attention}listed {C:green,E:1}probabilities{}',
                     '{C:attention}misses{}, gain {X:mult,C:white}X#1#{} Mult,',
                     'excluding {C:attention}playing cards{}',
                     '{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult){}',
@@ -505,7 +520,8 @@ return {
                 text = {
                     'If played {C:attention}poker hand{} is',
                     'a {C:attention}#3#{}, debuffs it and',
-                    'gain {X:chips,C:white}X1{} Chips. Changes at end of round',
+                    'gain {X:chips,C:white}X1{} Chips.',
+                    'Changes at end of round',
                     '{C:inactive}(Currently {X:chips,C:white}X#2#{C:inactive} Chips){}',
                     ' ',
                     '{C:inactive,E:1,s:0.85}That\'s a mimic!{}'                    
@@ -515,8 +531,8 @@ return {
                 name = 'Joker Achromatope',
                 text = {
                     'Gains {C:chips}+#1#{} Chips for',
-                    'every unique suit',
-                    'in played hand',
+                    'every unique {C:attention}suit{}',
+                    'in {C:attention}played hand{}',
                     '{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips){}',
                     ' ',
                     '{C:inactive,E:1,s:0.85}I see no difference.{}'
@@ -536,8 +552,9 @@ return {
             j_shrimp_JOKER_L_Caterpillar = {
                 name = 'Caterpillar',
                 text = {
-                    '{X:chips,C:white}X2{} chips when most {C:attention}played hand{} is',
-                    'played, then {C:dark_edition}balances{} chips and mult',
+                    '{X:chips,C:white}X2{} chips when most',
+                    '{C:attention}played hand{} is played,',
+                    'then {C:dark_edition}balances{} chips and mult',
                     ' ',
                     '{C:inactive,E:1,s:0.85} I am a silly goofer{}',
                 },
@@ -585,7 +602,7 @@ return {
                     '{C:dark_edition}Negative{} {C:attention}Joker{}',
                     '{C:inactive}(Currently {C:white,X:mult}X#1#{} {C:inactive}Mult){}',
                     ' ',
-                    '{C:inactive,E:1,s:0.85}It\'s dark in here{}',
+                    '{C:inactive,E:1,s:0.85}Welcome to Magrathea{}',
                 }
             },
             j_shrimp_JOKER_Sunk_Cost_Fallacy = {
@@ -602,7 +619,8 @@ return {
                 name = 'Claustrophobic',
                 text = {
                     'Gain {C:money}1${} per every {C:attention}card{}',
-                    'above 52 at the start of the shop',
+                    'above 52 at the start',
+                    'of the shop',
                     ' ',
                     '{C:inactive,E:1,s:0.85}I need way more space{}',
                 }
@@ -611,9 +629,9 @@ return {
                 name = 'Halley\'s Comet',
                 text = {
                     'Fill your consumable',
-                    'slots with {C:planet}planet{} {C:attention}cards{}',
+                    'slots with {C:planet}planet{} cards{}',
                     'when blind in defeated',
-                    'in one hand',
+                    'in {C:attention}one hand{}',
                     ' ',
                     '{C:inactive,E:1,s:0.85}*passes by*{}',
                 }
@@ -666,7 +684,14 @@ return {
                 }
             },
         },
-        Other={},
+        Other={
+            p_shrimp_BOOSTER_Solar_Pack = {
+                name = 'Solar Pack',
+                text = {
+                    '{C:red,X:dark_edition}WIP!!!!!{}'
+                }
+            },
+        },
         Planet={
             c_shrimp_PLANET_Red_Giant = {
                 name = 'Red Giant',

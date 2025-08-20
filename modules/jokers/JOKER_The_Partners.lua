@@ -22,6 +22,9 @@ SMODS.Joker{
     unlocked = true,
     discovered = true,
     atlas = 'Jokers',
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Played Hand series', G.C.WHITE, G.C.BLACK, 1 )
+    end,
     in_pool = function(self, args)
           return (
           not args 

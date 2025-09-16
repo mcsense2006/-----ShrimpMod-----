@@ -11,6 +11,10 @@ SMODS.Joker{
         x = 2,
         y = 4
     },
+    soul_pos = {
+        x = 12,
+        y = 0
+    },
     cost = 15,
     rarity = 'shrimp_epic',
     blueprint_compat = false,
@@ -19,7 +23,7 @@ SMODS.Joker{
     discovered = true,
     atlas = 'Jokers',
     credit = {
-        art = 'Shrimp',
+        art = '@Steam_Master0',
         code = 'Shrimp',
         concept = 'Shrimp',
     },

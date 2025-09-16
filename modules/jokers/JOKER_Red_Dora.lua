@@ -26,10 +26,11 @@ SMODS.Joker{
              badges[#badges+1] = create_badge('Mahjong Serie', G.C.WHITE, HEX("4BC292"), 1 )
     end,
     loc_vars = function(self, info_queue, card)
-        return {vars = { card.ability.extra.mult}}
+        return {vars = {card.ability.extra.mult}}
     end,
+
     calculate = function(self, card, context)
-        if context.individual and context.cardarea == G.play  then
+        if context.individual and context.cardarea == G.play  and not context.blueprint then
             if (context.other_card:get_id() == 5 and context.other_card:is_suit("Hearts") or context.other_card:is_suit("Diamonds")) then
                 card.ability.extra.mult = (card.ability.extra.mult) + 4
             end

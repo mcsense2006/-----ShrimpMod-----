@@ -15,10 +15,9 @@ SMODS.Joker{
     code = "Shrimp",
     concept = "Shrimp",
     },
-
     calculate = function(self, card, context)
-        if context.cardarea == G.jokers and context.joker_main then
-            if context.scoring_name ~= "Pair" then
+        if context.cardarea == G.jokers and context.joker_main  then
+            if not (next(context.poker_hands["Pair"])) then
                 return {
                     mult = card.ability.extra.mult
                 }

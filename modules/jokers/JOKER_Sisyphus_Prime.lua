@@ -26,20 +26,14 @@ SMODS.Joker{
             return {vars = { card.ability.extra.Xmult}}
     end,
     credit = {
-        art = "Shrimp",
-        code = "Shrimp",
-        concept = "Shrimp",
+        art = '@Steam_Master0',
+        code = 'Shrimp',
+        concept = 'Shrimp',
     },
     set_badges = function(self, card, badges)
              badges[#badges+1] = create_badge('Ultrakill', HEX("8F0300"), G.C.White, 1 )
     end,
     calculate = function(self, card, context)
-        if context.cardarea == G.jokers and context.joker_main  then
-                card.ability.extra.Xmult = (card.ability.extra.Xmult) + 0.10
-                return {
-                    Xmult = card.ability.extra.Xmult
-                }
-        end
         if context.repetition and context.cardarea == G.play  then
             if context.other_card == context.scoring_hand[#context.scoring_hand] then
                 return {
@@ -47,6 +41,12 @@ SMODS.Joker{
                     message = localize('k_again_ex')
                 }
             end
+        end
+        if context.cardarea == G.jokers and context.joker_main  then
+                card.ability.extra.Xmult = (card.ability.extra.Xmult) + 0.1
+                return {
+                    Xmult = card.ability.extra.Xmult
+                }
         end
     end
 }

@@ -19,7 +19,10 @@ SMODS.Joker{
     art = "Shrimp",
     code = "Shrimp",
     concept = "Shrimp",
-},
+    },
+    set_badges = function(self, card, badges)
+            badges[#badges+1] = create_badge('Meme', HEX("B00B69"), HEX("69B00B"), 1 )
+    end,
     calculate = function(self, card, context)
           if context.mod_probability  then
           local numerator, denominator = context.numerator, context.denominator

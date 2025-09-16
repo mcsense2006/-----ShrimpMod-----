@@ -1,7 +1,7 @@
 SMODS.Joker{
     key = 'JOKER_Package',
     atlas = 'Jokers',
-    pos = {x = 0, y = 0},
+    pos = {x = 13, y = 0},
     cost = 8,
     rarity = 3,
     blueprint_compat = false,
@@ -15,7 +15,7 @@ SMODS.Joker{
         }
     },
     credit = {
-        art = "",
+        art = "@Steam_Master0",
         code = "Shrimp",
         concept = "@andresirlo",
     },

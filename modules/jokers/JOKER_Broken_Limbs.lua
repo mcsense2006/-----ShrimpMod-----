@@ -1,7 +1,7 @@
 SMODS.Joker{
     key = 'JOKER_Broken_Limbs',
     atlas = 'Jokers',
-    pos = {x = 0, y = 0},
+    pos = {x = 8, y = 3},
     cost = 5,
     rarity = 2,
     blueprint_compat = false,
@@ -15,7 +15,7 @@ SMODS.Joker{
         }
     },
     credit = {
-        art = "",
+        art = "@Steam_Master0",
         code = "Shrimp",
         concept = "@andresirlo",
     },

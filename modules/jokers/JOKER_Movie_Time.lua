@@ -12,7 +12,7 @@ SMODS.Joker{
     cost = 6,
     rarity = 3,
     blueprint_compat = false,
-    eternal_compat = true,
+    eternal_compat = false,
     perishable_compat = true,
     unlocked = true,
     discovered = true,
@@ -43,7 +43,7 @@ SMODS.Joker{
             }))
             
             if created_joker then
-                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Its TV Time!", colour = G.C.BLUE})
+                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Mr.", colour = G.C.BLUE})
             end
             return true
         end,
@@ -63,7 +63,7 @@ SMODS.Joker{
             }))
             
             if created_joker then
-                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Its TV Time!", colour = G.C.BLUE})
+                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "(Ant)", colour = G.C.BLUE})
             end
             return true
         end,
@@ -84,7 +84,7 @@ SMODS.Joker{
             }))
             
             if created_joker then
-                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Its TV Time!", colour = G.C.BLUE})
+                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Tenna\'s", colour = G.C.BLUE})
             end
             return true
         end,
@@ -105,7 +105,7 @@ SMODS.Joker{
             }))
             
             if created_joker then
-                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Its TV Time!", colour = G.C.BLUE})
+                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "TV", colour = G.C.BLUE})
             end
             return true
         end,
@@ -126,7 +126,7 @@ SMODS.Joker{
             }))
             
             if created_joker then
-                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Its TV Time!", colour = G.C.BLUE})
+                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Time!", colour = G.C.BLUE})
             end
             return true
         end,

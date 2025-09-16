@@ -1,4 +1,5 @@
 SMODS.Tag {
+    atlas = 'Tag',
     key = "TAG_Epic",
     pos = { x = 1, y = 0 },
     apply = function(self, tag, context)

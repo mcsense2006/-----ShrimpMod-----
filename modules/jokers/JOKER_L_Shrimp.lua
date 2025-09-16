@@ -20,7 +20,10 @@ SMODS.Joker{
     art = "Shrimp",
     code = "sushii64",
     concept = "Shrimp",
-},
+    },
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Dev', G.C.DARK_EDITION, G.C.BLACK, 1 )
+    end,
 
     loc_vars = function(self, info_queue, card)
         return {vars = { card.ability.extra.gain, card.ability.extra.emult }}

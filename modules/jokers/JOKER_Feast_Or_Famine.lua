@@ -1,7 +1,7 @@
 SMODS.Joker{
     key = 'JOKER_Feast_Or_Famine',
     atlas = 'Jokers',
-    pos = {x = 6, y = 2},
+    pos = {x = 15, y = 2},
     cost = 3,
     rarity = 1,
     blueprint_compat = true,
@@ -11,46 +11,49 @@ SMODS.Joker{
     discovered = true,
     config = {
         extra = {
-            progress = 0, -- goes from 0 to 1
-            spent = 0     -- total spent since last reset
+            moneyshopgoal = 0,
+            Xmult = 1,
+            currentmoney = -25
         }
     },    credit = {
-    art = "Shrimp",
+    art = "TheCater_",
     code = "",
     concept = "@andresirlo",
 },
     loc_vars = function(self, info_queue, card)
-        return { vars = { string.format("%.2f", card.ability.extra.progress) } }
+            return {vars = { card.ability.extra.Xmult}}
     end,
-    loc_vars = function(self, info_queue, card)
-            return {vars = { card.ability.extra.spent}}
-    end,
-
     calculate = function(self, card, context)
-        -- Track money spent in shop
-        if context.buying_card and context.card_cost then
-            card.ability.extra.spent = (card.ability.extra.spent or 0) + context.card_cost
-
-            -- Every $25 spent, add to progress (max 1.0)
-            while card.ability.extra.spent >= 25 do
-                card.ability.extra.spent = card.ability.extra.spent - 25
-                card.ability.extra.progress = math.min(1.0, card.ability.extra.progress + 0.01)
-                card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+Progress", colour = G.C.GREEN})
+        if context.starting_shop  and not context.blueprint then
+                return {
+                    func = function()
+                    card.ability.extra.moneyshopgoal = card.ability.extra.currentmoney + (G.GAME.dollars)
+                    return true
+                end
+                }
+        end
+        if context.ending_shop  and not context.blueprint then
+            if card.ability.extra.moneyshopgoal <= G.GAME.dollars then
+                return {
+                    func = function()
+                    card.ability.extra.Xmult = 3
+                    return true
+                end
+                }
             end
         end
-
-        -- Reset on boss blind defeat
-        if context.blind and context.blind.boss and context.blind.defeated then
-            card.ability.extra.progress = 0
-            card.ability.extra.spent = 0
-            card_eval_status_text(card, 'extra', nil, nil, nil, {message = "Reset", colour = G.C.RED})
+        if context.cardarea == G.jokers and context.joker_main  then
+                return {
+                    Xmult = card.ability.extra.Xmult
+                }
         end
-
-        -- Apply ×3 mult when progress is full and a hand is being scored
-        if context.joker_main and card.ability.extra.progress >= 1.0 then
-            return {
-                xmult = 3
-            }
+        if context.end_of_round and context.main_eval and G.GAME.blind.boss  and not context.blueprint then
+                return {
+                    func = function()
+                    card.ability.extra.Xmult = 1
+                    return true
+                end
+                }
         end
     end
 }

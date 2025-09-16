@@ -2,7 +2,7 @@ SMODS.Joker{
     key = "JOKER_All_Green",
     config = {
         extra = {
-            mult = 1
+            Xmult = 1
         }
     },
     pos = {
@@ -26,7 +26,7 @@ SMODS.Joker{
              badges[#badges+1] = create_badge('Mahjong Serie', G.C.WHITE, HEX("4BC292"), 1 )
     end,
     loc_vars = function(self, info_queue, card)
-            return {vars = { card.ability.extra.mult}}
+            return {vars = { card.ability.extra.Xmult}}
     end,
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
@@ -41,12 +41,16 @@ SMODS.Joker{
     
     return allMatchSuit and #context.scoring_hand > 0
 end)()) then
-                card.ability.extra.mult = (card.ability.extra.mult) + 1
+                card.ability.extra.Xmult = (card.ability.extra.Xmult) + 1
                 return {
-                    message = "updated!",
+                    message = "Updated!",
                     extra = {
-                        Xmult = card.ability.extra.mult
+                        Xmult = card.ability.extra.Xmult
                         }
+                }
+            else
+                return {
+                    Xmult = card.ability.extra.Xmult
                 }
             end
         end

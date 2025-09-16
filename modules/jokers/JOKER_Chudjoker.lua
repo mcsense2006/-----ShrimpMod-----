@@ -9,8 +9,8 @@ SMODS.Joker{
         }
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 13,
+        y = 2
     },
     cost = 6,
     rarity = 3,
@@ -20,7 +20,7 @@ SMODS.Joker{
     discovered = true,
     atlas = 'Jokers',
     credit = {
-        art = "",
+        art = "@Steam_Master0",
         code = "Shrimp",
         concept = "<Credits would be appreciated>",
     },

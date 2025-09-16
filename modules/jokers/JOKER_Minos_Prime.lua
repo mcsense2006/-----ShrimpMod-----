@@ -2,7 +2,7 @@ SMODS.Joker{
     key = "JOKER_Minos_Prime",
     config = {
         extra = {
-            Xmult = 1,
+            mult = 1,
             repetitions = 2,
             repetitions2 = 2
         }
@@ -24,17 +24,25 @@ SMODS.Joker{
     discovered = true,
     atlas = 'Jokers',
     loc_vars = function(self, info_queue, card)
-            return {vars = { card.ability.extra.Xmult}}
+            return {vars = { card.ability.extra.mult}}
     end,
     credit = {
-        art = "Shrimp",
-        code = "Shrimp",
-        concept = "Shrimp",
+        art = '@Steam_Master0',
+        code = 'Shrimp',
+        concept = 'Shrimp',
     },
     set_badges = function(self, card, badges)
              badges[#badges+1] = create_badge('Ultrakill', HEX("8F0300"), G.C.White, 1 )
     end,
     calculate = function(self, card, context)
+        if context.end_of_round and context.main_eval and G.GAME.blind.boss  and not context.blueprint then
+                return {
+                    func = function()
+                    card.ability.extra.mult = (card.ability.extra.mult) + 0.2
+                    return true
+                end
+                }
+        end
         if context.repetition and context.cardarea == G.play  then
                 return {
                     repetitions = card.ability.extra.repetitions,
@@ -47,18 +55,9 @@ SMODS.Joker{
                     message = localize('k_again_ex')
                 }
         end
-        if context.end_of_round and context.main_eval and G.GAME.blind.boss  then
-                return {
-                    func = function()
-                    card.ability.extra.Xmult = (card.ability.extra.Xmult) + 0.5
-                    return true
-                end,
-                    message = "Updated!"
-                }
-        end
         if context.cardarea == G.jokers and context.joker_main  then
                 return {
-                    Xmult = card.ability.extra.Xmult
+                    e_mult = card.ability.extra.mult
                 }
         end
     end

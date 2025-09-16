@@ -25,10 +25,9 @@ SMODS.Joker{
     loc_vars = function(self, info_queue, card)
         return {vars = {card.ability.extra.Xmult}}
     end,
-
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
-            if not (not ((function()
+            if not ((function()
     local current_played = G.GAME.hands[context.scoring_name].played or 0
     for handname, values in pairs(G.GAME.hands) do
         if handname ~= context.scoring_name and values.played > current_played and values.visible then
@@ -36,8 +35,12 @@ SMODS.Joker{
         end
     end
     return true
-end)())) then
+end)()) then
                 card.ability.extra.Xmult = (card.ability.extra.Xmult) + 0.1
+                return {
+                    Xmult = card.ability.extra.Xmult
+                }
+            else
                 return {
                     Xmult = card.ability.extra.Xmult
                 }

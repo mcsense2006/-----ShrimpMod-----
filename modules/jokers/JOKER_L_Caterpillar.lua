@@ -20,6 +20,9 @@ SMODS.Joker{
             xchips = 2
         }
     },
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Dev', G.C.DARK_EDITION, G.C.BLACK, 1 )
+    end,
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main then

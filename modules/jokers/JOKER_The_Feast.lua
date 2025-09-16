@@ -2,7 +2,7 @@ SMODS.Joker{
     key = "JOKER_The_Feast",
     config = {
         extra = {
-            Xmult = 2.5
+            Xmult = 3.5
         }
     },
     pos = {

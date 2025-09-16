@@ -4,8 +4,12 @@ return {
             b_shrimp_DECK_Mahjong = {
                 name = 'Mahjong Deck',
                 text = {
-                    'Repleace all cards with Mahjong cards',
-                    'WIP'
+                    '{C:mult,X:dark_edition}WIP',
+                    ' ',
+                    '{C:attention}Repleace{} all cards with {C:Mahjong}Mahjong{} cards',
+                    'all vanilla hands {C:red}disabled{}, you',
+                    'can only play {C:Mahjong}Riichi Mahjong{}',
+                    'winning {C:attention}hands{}/parts of {C:attention}hands{}'
                 }
             },
         },
@@ -27,6 +31,102 @@ return {
                     'Placeholder, 1st row',
                     'Placeholder, 2nd row',
                     'Placeholder, 3rd row',
+                }
+            },
+            j_shrimp_JOKER_Venom_Snake = {
+                name = 'Venom Snake',
+                text = {
+                    'Gains {C:white,X:mult}X1{} mult',
+                    'each time a {C:planet}earth{} card is used',
+                    '{C:inactive}(currently{} {C:white,X:mult}X#1#{C:inactive} mult){}'
+                }
+            },
+            j_shrimp_JOKER_Bismuth = {
+                name = 'Bismuth',
+                text = {
+                    'Each scored {C:attention}Wild cards{}',
+                    'gives {C:mult}+5{} mult, {C:white,X:mult}X1.3{} mult,',
+                    '{C:chips}+30{} chips and {C:money}$1'
+                }
+            },
+            j_shrimp_JOKER_Crustacean_Dealer = {
+                name = 'Crustacean Dealer',
+                text = {
+                    'does nothing... for the moment'
+                }
+            },
+            j_shrimp_JOKER_Sinful_Witch = {
+                name = 'Sinful Witch',
+                text = {
+                    'Gains {C:mult}+5{} mult',
+                    'each time a {C:Ultrakill}Sinful{} card',
+                    'is used',
+                    '{C:inactive}(Currently{} {C:mult}+#1#{} {C:inactive}mult)'
+                }
+            },
+            j_shrimp_JOKER_Earthmover = {
+                name = 'Earthmover',
+                text = {
+                    'When a card is {C:attention}destroyed',
+                    'creates a {C:Ultrakill}Sinful{} card'
+                }
+            },
+            j_shrimp_JOKER_Brunnhilde = {
+                name = 'Brünnhilde',
+                text = {
+                    'Retriggers last {C:attention}scored{}',
+                    'card 3 times'
+                }
+            },
+            j_shrimp_JOKER_Runner_Kick = {
+                name = 'Runner\'s Kick',
+                text = {
+                    'Last {C:attention}scored{} card',
+                    'grants {C:white,X:mult}X3{} mult'
+                }
+            },
+            j_shrimp_JOKER_The_Library_Of_Order = {
+                name = 'The Library Of Order',
+                text = {
+                    'when this card is sold',
+                    '{C:green}#1# in 150{} chance of creating',
+                    '2 random {C:legendary,E:1}Legendary{} jokers',
+                    'The {C:green}probability{} {C:attention}doubles',
+                    'each time the round ends.',
+                    '{C:inactive}(must have room)'
+                }
+            },
+            j_shrimp_JOKER_Steam_Joker = {
+                name = 'Steam Joker',
+                text = {
+                    'Gains {C:white,X:mult}X0.1{} mult per',
+                    '{C:attention}hand played{} with',
+                    'minimum 1 {C:spades}spade{} scored',
+                    '{C:inactive}(currently{} {C:white,X:mult}X#1#{} {C:inactive}mult)'
+                }
+            },
+            j_shrimp_JOKER_The_Monolith = {
+                name = 'The Monolith',
+                text = {
+                    '{X:mult,C:dark_edition}^1.5{} mult if played',
+                    'hand is a',
+                    '{C:attention}flush five{}'
+                }
+            },
+            j_shrimp_JOKER_The_Legion = {
+                name = 'The Legion',
+                text = {
+                    '{X:mult,C:dark_edition}^1.2{} mult if played',
+                    'hand is a',
+                    '{C:attention}five of a kind{}'
+                }
+            },
+            j_shrimp_JOKER_The_Court = {
+                name = 'The Court',
+                text = {
+                    '{X:mult,C:dark_edition}^1.3{} mult if played',
+                    'hand is a',
+                    '{C:attention}flush house{}'
                 }
             },
             j_shrimp_JOKER_The_Partners = {
@@ -56,7 +156,7 @@ return {
             j_shrimp_JOKER_The_Royal = {
                 name = 'The Royal',
                 text = {
-                    '{C:white,X:mult}X4{} mult if played',
+                    '{C:white,X:mult}X8{} mult if played',
                     'hand contains',
                     'a{C:attention} straight flush'
                 }
@@ -80,7 +180,7 @@ return {
             j_shrimp_JOKER_The_Feast = {
                 name = 'The Feast',
                 text = {
-                    '{C:white,X:mult}X2.5{} mult if played',
+                    '{C:white,X:mult}X3.5{} mult if played',
                     'hand contains',
                     'a {C:attention}full house{}'
                 }
@@ -184,8 +284,10 @@ return {
             j_shrimp_JOKER_Flesh_Panopticon = {
                 name = 'Flesh Panopticon',
                 text = {
-                    'Gains {X:chips,C:white}Xn{} chips when a {C:attention}boss{} is defeated',
-                    '(Where n is a 10th of the money you hold when it triggers)',
+                    'Sets {X:chips,C:white}Xn{} chips',
+                    'when a {C:attention}boss{} is defeated',
+                    '(Where n is a 10th of',
+                    'the money you hold when it triggers)',
                     '{C:inactive}(Currently {}{C:white,X:chips}X#1#{} {C:inactive}chips){}',
                     ' ',
                     '{E:2,s:0.85}If you use 10 consumables this run, sell this',
@@ -205,17 +307,19 @@ return {
                 name = 'Minos Prime',
                 text = {
                     'Retrigers all {C:attention}playing cards{} twice,',
-                    'Gains {X:mult,C:white}X0.5{} mult per boss blind defeated',
-                    '{C:inactive}(Currently {C:white,X:mult}X#1#{}{C:inactive} mult){}',
+                    'Gains {X:mult,C:dark_edition}^0.2{} mult per boss blind defeated',
+                    '{C:inactive}(Currently {C:dark_edition,X:mult}^#1#{}{C:inactive} mult){}',
                 }
             },
             j_shrimp_JOKER_Flesh_Prison = {
                 name = 'Flesh Prison',
                 text = {
-                    '{X:mult,C:white}X1.5{} for each card if',
-                    'played hand is a {C:attention}flush{}.',
+                    '{X:mult,C:white}X1.5{} mult for each card if',
+                    'played hand contains',
+                    'a {C:attention}flush{}.',
                     ' ',
-                    '{E:2,s:0.85}If you defeat 3 boss blinds in 1 hand each,',
+                    '{E:2,s:0.85}If you defeat 3 boss blinds',
+                    '{E:2,s:0.85}concecutively in 1 hand each,',
                     '{E:2,s:0.85}sell this card to summon{} {C:Prime,E:2,s:0.85}Minos Prime{}',
                     '{C:inactive}[#1#]{}',
                 }
@@ -230,7 +334,7 @@ return {
             j_shrimp_JOKER_Common_Ends = {
                 name = 'Common Ends',
                 text = {
-                    'Gains {C:mult}+2{} mult for each',
+                    'Gains {C:mult}+1{} mult for each',
                     '{C:attention}ace{} or {C:attention}face cards{} played',
                     '{C:inactive}(Currently {}{C:mult}+#1#{}{C:inactive} Mult){}',
                 }
@@ -250,7 +354,7 @@ return {
                 text = {
                     'gains {C:white,X:mult}X1{} mult per',
                     '{C:clubs}club{} {C:attention}flush{} played',
-                    '{C:inactive}(currently{} {C:white,X:mult} X#1# {C:inactive}mult){}',
+                    '{C:inactive}(currently{} {C:white,X:mult} X#1#{C:inactive} mult){}',
                 }
             },
             j_shrimp_JOKER_Four_Concealed_Triplets = {
@@ -258,7 +362,6 @@ return {
                 text = {
                     '{C:white,X:mult}X4{} mult each time 4',
                     '{C:attention}three of a kind{} is played',
-                    '(resets on discard)',
                     '{C:inactive}[#1#]{}',
                 }
             },
@@ -301,15 +404,18 @@ return {
             j_shrimp_JOKER_Red_Dora = { --modify code to message the upgrade
                 name = 'Red Dora',
                 text = {
-                    'This joker gains {C:mult}+4{}',
-                    'mult for each {C:diamonds}diamonds{} or {C:hearts}hearts{}',
-                    '5 played',
+                    'Gains {C:mult}+4{} mult for each',
+                    '{C:diamonds}diamonds{} or {C:hearts}hearts{}',
+                    '{C:attention}5{} scored',
                     '{C:inactive}(currently {}{C:mult}+#1#{}{C:inactive} mult){}',
                 }
             },
             j_shrimp_JOKER_Rinshan = {
                 name = 'Rinshan',
                 text = {
+                    '{C:mult,X:dark_edition}WIP',
+                    '{C:mult}WILL EITHER NOT WORK AS INTENDED OR CRASH YOUR GAME{}',
+                    ' ',
                     'Draw {C:attention}2{} extra',
                     'cards next hand if the',
                     'hand played is a',
@@ -392,6 +498,9 @@ return {
             j_shrimp_JOKER_Canva = {
                 name = 'Canva',
                 text = {
+                    '{C:mult,X:dark_edition}WIP',
+                    '{C:mult}WILL EITHER NOT WORK AS INTENDED OR CRASH YOUR GAME{}',
+                    ' ',
                     'Copies the ability of the {C:attention}Joker{}',
                     'to the left'
                 }
@@ -399,6 +508,10 @@ return {
             j_shrimp_JOKER_Sketch = {
                 name = 'Sketch',
                 text = {
+                    '{C:mult,X:dark_edition}WIP',
+                    '{C:mult}WILL EITHER NOT WORK AS INTENDED OR CRASH YOUR GAME{}',
+                    ' ',
+                    '{C:inactive} \"poof\" variable : #1#',
                     'Copies the ability of rightmost {C:attention}Joker{}'
                 }
             },
@@ -610,9 +723,9 @@ return {
                 text = {
                     'This {C:attention}Joker{} gains {C:white,X:mult}X0.25',
                     'Mult per every {C:money}$1{} bellow {C:money}$0{}',
-                    '{C:inactive}(Currently {C:white,X:mult}X1{} {C:inactive}Mult){}',
+                    '{C:inactive}(Currently {C:white,X:mult}X#1#{} {C:inactive}Mult){}',
                     ' ',
-                    '{C:inactive,E:1,s:0.85}Not{} {C:mult,E:1,s:0.85}+4{}{C:inactive,E:1,s:0.85}:(',
+                    '{C:inactive,E:1,s:0.85}Not{} {C:white,X:mult,E:1,s:0.85}X4{}{C:inactive,E:1,s:0.85}:(',
                 }
             },
             j_shrimp_JOKER_Claustrophobic = {
@@ -628,8 +741,8 @@ return {
             j_shrimp_JOKER_Halleys_Comet = {
                 name = 'Halley\'s Comet',
                 text = {
-                    'Fill your consumable',
-                    'slots with {C:planet}planet{} cards{}',
+                    'Grant 2 {C:dark_edition}negative',
+                    '{C:planet}planet{} cards{}',
                     'when blind in defeated',
                     'in {C:attention}one hand{}',
                     ' ',
@@ -639,9 +752,11 @@ return {
             j_shrimp_JOKER_Drunk_Vision = {
                 name = 'Drunk Vision',
                 text = {
-                    'Ranks {C:attention}9{} and {C:attention}6{}, {C:attention}A{} and {C:attention}2{}',
-                    'are concidered the',
-                    'same',
+                    '{C:mult,X:dark_edition}WIP',
+                    '{C:mult}WILL EITHER NOT WORK AS INTENDED OR CRASH YOUR GAME{}',
+                    ' ',
+                    '{C:attention}9s{} and {C:attention}6s{} are concidered the same',
+                    '{C:attention}As{} and {C:attention}2s{} are concidered the same',
                     ' ',
                     '{C:inactive,E:1,s:0.85}hips{}',
                 }
@@ -649,7 +764,8 @@ return {
             j_shrimp_JOKER_Paper_Shredder = {
                 name = 'Paper Shredder',
                 text = {
-                    'you can {C:red}discard{} everything',
+                    'you can {C:red}discard{}',
+                    'everything',
                     ' ',
                     '{C:inactive,E:1,s:0.85}*shreds*{}',
                 }
@@ -657,11 +773,14 @@ return {
             j_shrimp_JOKER_Feast_Or_Famine = {
                 name = 'Feast or Famine',
                 text = {
+                    '{C:mult,X:dark_edition}WIP',
+                    '{C:mult}WILL EITHER NOT WORK AS INTENDED OR CRASH YOUR GAME{}',
+                    ' ',
                     'Gain {X:mult,C:white}X3{} mult when',
                     'spending {C:money}25${} in a single',
                     '{C:green}shop{}',
                     '{C:inactive}(resets every ante){}',
-                    '{C:inactive}(currently spent #1#$){}'
+                    '{C:inactive}(currently {C:white,X:mult}X#1#{} {C:inactive}mult)'
                 }
             },
             j_shrimp_JOKER_Colorblind_Joker = {
@@ -677,7 +796,8 @@ return {
             j_shrimp_JOKER_L_Pangoreuil = {
                 name = 'Pangoreuil',
                 text = {
-                    'Creates 15 negatives {C:attention}Wheel of fortune{}',
+                    'Creates 15 {C:dark_edition}negatives',
+                    '{C:attention}Wheel of fortune{}',
                     'when this card is {C:attention}sold{}',
                     ' ',
                     '{C:inactive,E:1,s:0.85}Let\' go gambling{}'
@@ -685,57 +805,111 @@ return {
             },
         },
         Other={
-            p_shrimp_BOOSTER_Solar_Pack = {
+            p_shrimp_Solar_normal = {
                 name = 'Solar Pack',
+                group_name = 'Solar Pack',
                 text = {
-                    '{C:red,X:dark_edition}WIP!!!!!{}'
+                    'Choose {C:attention}#1#{} of up to',
+                    '{C:attention}#2#{} {V:1}Solar{} cards to',
+                    'be used immediately'
+                }
+            },
+            p_shrimp_Solar_jumbo = {
+                name = 'Jumbo Solar Pack',
+                group_name = 'Jumbo Solar Pack',
+                text = {
+                    'Choose {C:attention}#1#{} of up to',
+                    '{C:attention}#2#{} {V:1}Solar{} cards to',
+                    'be used immediately'
+                }
+            },
+            p_shrimp_Solar_mega = {
+                name = 'Mega Solar Pack',
+                group_name = 'Mega Solar Pack',
+                text = {
+                    'Choose {C:attention}#1#{} of up to',
+                    '{C:attention}#2#{} {V:1}Solar{} cards to',
+                    'be used immediately'
+                }
+            },
+            undiscovered_shrimp_Solar = {
+                name = 'Not Discovered',
+                text = {
+                    'Purchase or use',
+                    'this card in an',
+                    'unseeded run to',
+                    'learn what it does',
+                },
+            },
+        },
+        Planets={},
+        Sinful={
+            c_shrimp_SIN_Greed = {
+                name = 'Greed',
+                text = {
+                    '{C:mult,X:dark_edition}WIP',
+                    '{C:mult}WILL EITHER NOT WORK AS INTENDED OR CRASH YOUR GAME{}',
+                    ' ',
+                    '{C:green}1 in 2{} chance of',
+                    'creating an {C:attention}investment tag{}'
+                }
+            },
+            c_shrimp_SIN_Sigilum_Dei = {
+                name = 'Sigilum Dei',
+                text = {
+                    '{C:mult,X:dark_edition}WIP',
+                    '{C:mult}WILL EITHER NOT WORK AS INTENDED OR CRASH YOUR GAME{}',
+                    ' ',
+                    'Select {C:attention}1{} card',
+                    '{C:attention}convert{} all other cards in hand',
+                    'to this card'
                 }
             },
         },
-        Planet={
-            c_shrimp_PLANET_Red_Giant = {
+        Solar={
+            c_shrimp_SOLAR_Red_Giant = {
                 name = 'Red Giant',
                 text = {
                     'Level up all poker hands',
                     'that contains a {C:attention}straight{}',
                 }
             },
-            c_shrimp_PLANET_Main_Sequence = {
+            c_shrimp_SOLAR_Main_Sequence = {
                 name = 'Main Sequence',
                 text = {
                     'Level up all poker hands',
                     'that contains a {C:attention}flush{}',
                 }
             },
-            c_shrimp_PLANET_White_Dwarf = {
+            c_shrimp_SOLAR_White_Dwarf = {
                 name = 'White Dwarf',
                 text = {
                     'Level up all poker hands',
                     'that contains a {C:attention}two pairs{}',
                 }
             },
-            c_shrimp_PLANET_Neutron = {
+            c_shrimp_SOLAR_Neutron = {
                 name = 'Neutron',
                 text = {
                     'Level up all poker hands',
                     'that contains a {C:attention}four of a kind{}',
                 }
             },
-            c_shrimp_PLANET_Pulsar = {
+            c_shrimp_SOLAR_Pulsar = {
                 name = 'Pulsar',
                 text = {
                     'Level up all poker hands',
                     'that contains a {C:attention}secret hand{}',
                 }
             },
-            c_shrimp_PLANET_Protostar = {
+            c_shrimp_SOLAR_Protostar = {
                 name = 'Protostar',
                 text = {
                     'Level up all poker hands',
                     'that contains {C:attention}5 cards{}',
                 }
             },
-            c_shrimp_PLANET_Brown_Dwarf = {
+            c_shrimp_SOLAR_Brown_Dwarf = {
                 name = 'Brown Dwarf',
                 text = {
                     'Level up all poker hands',
@@ -749,6 +923,9 @@ return {
             tag_shrimp_TAG_Epic = {
                 name = 'Epic Tag',
                 text = {
+                    '{C:mult,X:dark_edition}WIP',
+                    '{C:mult}WILL EITHER NOT WORK AS INTENDED OR CRASH YOUR GAME{}',
+                    ' ',
                     'Shop has a free',
                     '{C:Epic}Epic Joker{}',
                 }
@@ -773,12 +950,32 @@ return {
         collabs={},
         dictionary={
             k_shrimp_epic = 'Epic',
-            k_shrimp_prime = 'Prime Soul',
+            k_shrimp_prime = 'Prime Soul', 
+            b_solar_cards = 'Solar cards',
+            k_solar = 'Solar',
+            b_sinful_cards = 'Sinful Cards',
+            k_sinful = 'Sinful',
         },
         high_scores={},
-        labels={},
-        poker_hand_descriptions={},
-        poker_hands={},
+        labels={
+            shrimp_Solar = 'Solar',
+            shrimp_Sinful = 'Sinful',
+        },
+        poker_hand_descriptions={
+            shrimp_All_Simples = {
+                'Winning hand consisting of only',
+                'non-terminal and non-honor cards'
+            },
+            shrimp_All_Green = {
+                'Winning hand consisting of only green tiles',
+                '{s:0.85,E:1}green tiles are the',
+                '{s:0.85,E:1}2,3,4,6,8 of SOU and the green dragon'
+            },
+        },
+        poker_hands={
+            shrimp_All_Simples = 'All Simples',
+            shrimp_All_Green = 'All Green',
+        },
         quips={},
         ranks={},
         suits_plural={
@@ -797,7 +994,7 @@ return {
         },
         tutorial={},
         v_dictionary={
-            a_emult = "^#1# Mult",
+            a_emult = '^#1# Mult',
         },
         v_text={},
     },

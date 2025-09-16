@@ -1,6 +1,6 @@
 SMODS.Consumable {
-    key = 'PLANET_Neutron',
-    set = 'Planet',
+    key = 'SOLAR_Neutron',
+    set = 'Solar',
     pos = { x = 0, y = 1 },
     config = { extra = {
         hand_type = "Four of a Kind",
@@ -12,7 +12,7 @@ SMODS.Consumable {
     discovered = true,
     hidden = false,
     can_repeat_soul = false,
-    atlas = 'Tarot',
+    atlas = 'Solar',
     use = function(self, card, area, copier)
         local used_card = copier or card
             update_hand_text({ sound = 'button', volume = 0.7, pitch = 0.8, delay = 0.3 },

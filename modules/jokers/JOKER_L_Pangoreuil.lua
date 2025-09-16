@@ -21,6 +21,9 @@ SMODS.Joker{ --yes i know this is some terrible code but its quite funny too (i 
             c_wheel_of_fortune = 0
         }
     },
+    set_badges = function(self, card, badges)
+             badges[#badges+1] = create_badge('Dev', G.C.DARK_EDITION, G.C.BLACK, 1 )
+    end,
 
     calculate = function(self, card, context)
         if context.selling_self and not context.blueprint then

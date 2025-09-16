@@ -8,13 +8,13 @@ SMODS.Joker{
         }
     },
     credit = {
-        art = '',
+        art = '@Steam_Master0',
         code = 'Shrimp',
         concept = '@andresirlo',
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 13,
+        y = 3
     },
     cost = 4,
     rarity = 1,

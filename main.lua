@@ -303,7 +303,7 @@ assert(SMODS.load_file('./modules/sinful/SIN_Sigilum_Dei.lua'))()
 assert(SMODS.load_file('./modules/booster/BOOSTER_Solar_Packs.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load Tags
-assert(SMODS.load_file('./modules/tags/TAG_Epic.lua'))()
+--assert(SMODS.load_file('./modules/tags/TAG_Epic.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load mahjong related things
 assert(SMODS.load_file('./modules/suits/SUIT_Mahjong.lua'))()

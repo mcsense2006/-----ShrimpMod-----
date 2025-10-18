@@ -3,14 +3,14 @@ SMODS.Joker{ --Bismuth
     config = {
         extra = {
             mult = 5,
-            Xmult = 1.3,
+            Xmult = 1.5,
             chips = 30,
-            dollars = 1
+            dollars = 2
         }
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 11,
+        y = 1
     },
     cost = 5,
     rarity = 2,

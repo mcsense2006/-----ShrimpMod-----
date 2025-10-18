@@ -59,14 +59,14 @@ return {
                 }
             },
             j_shrimp_JOKER_Runner_Kick = {
-                name = 'Runner\'s Kick',
+                name = 'Coup de pied du coureur',
                 text = {
                     'La dernière carte {C:attention}jouée{}',
                     'octroie {C:white,X:mult}X3{} mult'
                 }
             },
             j_shrimp_JOKER_The_Library_Of_Order = {
-                name = 'The Library Of Order',
+                name = 'La bibliothèque de l\'ordre',
                 text = {
                     'quand cette carte est vendue',
                     '{C:green}#1# chance sur 150{} de créer',
@@ -77,7 +77,7 @@ return {
                 }
             },
             j_shrimp_JOKER_Steam_Joker = {
-                name = 'Steam Joker',
+                name = 'Joker a vapeur',
                 text = {
                     'Gagne {C:white,X:mult}X0.1{} mult par',
                     '{C:attention}main jouée{} avec',
@@ -86,7 +86,7 @@ return {
                 }
             },
             j_shrimp_JOKER_The_Monolith = {
-                name = 'The Monolith',
+                name = 'Le Monolith',
                 text = {
                     '{X:mult,C:dark_edition}^1.5{} mult si la',
                     'main jouée est un',
@@ -94,164 +94,164 @@ return {
                 }
             },
             j_shrimp_JOKER_The_Legion = {
-                name = 'The Legion',
+                name = 'La Légion',
                 text = {
-                    '{X:mult,C:dark_edition}^1.2{} mult if played',
-                    'hand is a',
-                    '{C:attention}five of a kind{}'
+                    '{X:mult,C:dark_edition}^1.2{} mult si la',
+                    'main jouée est un',
+                    '{C:attention}Cinq cartes identiques{}'
                 }
             },
             j_shrimp_JOKER_The_Court = {
-                name = 'The Court',
+                name = 'La Court',
                 text = {
-                    '{X:mult,C:dark_edition}^1.3{} mult if played',
-                    'hand is a',
+                    '{X:mult,C:dark_edition}^1.3{} mult si la',
+                    'main jouée est un',
                     '{C:attention}flush house{}'
                 }
             },
             j_shrimp_JOKER_The_Partners = {
-                name = 'The Partners',
+                name = 'Les Partenaires',
                 text = {
-                    '{C:white,X:mult}X2.5{} mult if played',
-                    'hand contains',
-                    'a {C:attention}two pairs'
+                    '{C:white,X:mult}X2.5{} mult si la',
+                    'main jouée contient',
+                    'une {C:attention}deux paires'
                 }
             },
             j_shrimp_JOKER_Savvy_Joker = {
-                name = 'Savvy Joker',
+                name = 'Joker Avisé',
                 text = {
-                    '{C:chips}+180{} chips if played',
-                    'hand contains',
-                    'a {C:attention}straight flush'
+                    '{C:chips}+180{} chips si la',
+                    'main jouée contient',
+                    'une {C:attention}Quinte flush'
                 }
             },
             j_shrimp_JOKER_Zesty_Joker = {
-                name = 'Zesty Joker',
+                name = 'Joker Piquant',
                 text = {
-                    '{C:mult}+22{} mult if played',
-                    'hand contains',
-                    'a{C:attention} straight flush'
+                    '{C:mult}+22{} mult si la',
+                    'main jouée contient',
+                    'une {C:attention}Quinte flush'
                 }
             },
             j_shrimp_JOKER_The_Royal = {
-                name = 'The Royal',
+                name = 'Le Royal',
                 text = {
-                    '{C:white,X:mult}X8{} mult if played',
-                    'hand contains',
-                    'a{C:attention} straight flush'
+                    '{C:white,X:mult}X8{} mult si la',
+                    'main jouée contient',
+                    'une {C:attention}Quinte flush'
                 }
             },
             j_shrimp_JOKER_Brainy_Joker = {
-                name = 'Brainy Joker',
+                name = 'Joker Intelligent',
                 text = {
-                    '{C:chips}+110{} chips if played',
-                    'hand contains',
-                    'a {C:attention}four of a kind{}'
+                    '{C:chips}+110{} chips si la',
+                    'main jouée contient',
+                    'un {C:attention}Carré{}'
                 }
             },
             j_shrimp_JOKER_Loony_Joker = {
-                name = 'Loony Joker',
+                name = 'Joker Fou',
                 text = {
-                    '{C:mult}+15{} mult if played',
-                    'hand contains',
-                    'a {C:attention}four of a kind{}'
+                    '{C:mult}+15{} mult si la',
+                    'main jouée contient',
+                    'un {C:attention}Carré{}'
                 }
             },
             j_shrimp_JOKER_The_Feast = {
-                name = 'The Feast',
+                name = 'Le Festin',
                 text = {
-                    '{C:white,X:mult}X3.5{} mult if played',
-                    'hand contains',
-                    'a {C:attention}full house{}'
+                    '{C:white,X:mult}X3.5{} mult si la',
+                    'main jouée contient',
+                    'une {C:attention}Main pleine{}'
                 }
             },
             j_shrimp_JOKER_Merry_Joker = {
-                name = 'Merry Joker',
+                name = 'Joker Jovial',
                 text = {
-                    '{C:mult}+11{} mult if played',
-                    'hand contains',
-                    'a {C:attention}full house{}'
+                    '{C:mult}+11{} mult si la',
+                    'main jouée contient',
+                    'une {C:attention}Main pleine{}'
                 }
             },
             j_shrimp_JOKER_Shrewd_Joker = {
-                name = 'Shrewd Joker',
+                name = 'Joker Astucieux',
                 text = {
-                    '{C:chips}+90{} chips if played',
-                    'hand contains',
-                    'a {C:attention}full house{}'
+                    '{C:chips}+90{} chips si la',
+                    'main jouée contient',
+                    'une {C:attention}Main pleine{}'
                 }
             },
             j_shrimp_JOKER_Goofy_Joker = {
-                name = 'Goofy Joker',
+                name = 'Joker Ridicule',
                 text = {
-                    '{C:mult}+6{} mult if played',
-                    'hand is',
-                    'a {C:attention}high card',
+                    '{C:mult}+6{} mult si la',
+                    'main jouée est',
+                    'une {C:attention}Carte haute',
                 }
             },
             j_shrimp_JOKER_Witty_Joker = {
-                name = 'Witty Joker',
+                name = 'Joker Spirituel',
                 text = {
-                    '{C:chips}+25{} chips if played',
-                    'hand is',
-                    'a {C:attention}high card',
+                    '{C:chips}+25{} chips si la',
+                    'main jouée est',
+                    'une {C:attention}Carte haute',
                 }
             },
             j_shrimp_JOKER_The_Solo = {
-                name = 'The Solo',
+                name = 'Le Solo',
                 text = {
-                    '{C:white,X:mult}X1.5{} mult if played',
-                    'hand contains',
-                    'a {C:attention}high card{}',
+                    '{C:white,X:mult}X1.5{} mult si la',
+                    'main jouée contient',
+                    'une {C:attention}Carte haute',
                 }
             },
             j_shrimp_JOKER_Social_Ladder = {
-                name = 'Social Ladder',
+                name = 'Echelle sociale',
                 text = {
-                    'Increase your least',
-                    '{C:attention}played hand{} level by 2',
-                    'at the end of round',
+                    'Augmentez le niveau de main',
+                    'la {C:attention}moins jouée{} de 2',
+                    'a la fin du round',
                     ' ',
-                    '{C:inactive,E:1,s:0.85}And i climb{}'
+                    '{C:inactive,E:1,s:0.85}Et je grimpe{}'
                 }
             },
             j_shrimp_JOKER_The_Big_Shot = {
-                name = 'The Big Shot',
+                name = 'Le gros bonnet',
                 text = {
-                    'Scoring {C:dark_edition}foil{} cards',
-                    'gives {C:chips}1997{} chips each',
+                    'Les cartes {C:dark_edition}foil{} scorées',
+                    'donnent {C:chips}1997{} chips chaqu\'unes',
                     ' ',
-                    '{C:inactive,E:1,s:0.85}Now\'s your chance to be a BIG SHOT{}'
+                    '{C:inactive,E:1,s:0.85}C\'est ta chance de devenir quelqu\'un d\'important{}'
                 }
             },
             j_shrimp_JOKER_Appetizer = {
-                name = 'Appetizer',
+                name = 'Apéritif',
                 text = {
-                    'When NOT playing your most',
-                    '{C:attention}played hand{},',
-                    'gain {C:white,X:mult}X0.1{} mult',
-                    '{C:inactive}(currently{} {C:white,X:mult}X#1#{}{C:inactive} mult)'
+                    'Quand vous ne jouez pas votre',
+                    '{C:attention}main jouée{} la plus jouée,',
+                    'gagne {C:white,X:mult}X0.1{} mult',
+                    '{C:inactive}(actuellement{} {C:white,X:mult}X#1#{}{C:inactive} mult)'
                 }
             },
             j_shrimp_JOKER_Package = {
-                name = 'Package',
+                name = 'Paquet',
                 text = {
-                    'Grants 2 {C:attention}Joker slots',
-                    '{C:red}destroys{} itself after 3 rounds',
+                    'donne 2 {C:attention}Place de jokers',
+                    '{C:red}s\'autodétruit{} après 3 rounds',
                 }
             },
             j_shrimp_JOKER_Clairvoyance = {
                 name = 'Clairvoyance',
                 text = {
-                    'Defeating a boss blind',
-                    'creates a {C:attention}Charm tag{}',
+                    'Battre une blinde de boss',
+                    'crée un {C:attention}Badge de Charme{}',
                     ' ',
-                    '{C:inactive,E:1,s:0.85}I see...you will{}',
-                    '{C:inactive,E:1,s:0.85}lose on the wheel of fortune',
+                    '{C:inactive,E:1,s:0.85}Je vois que vous...{}',
+                    '{C:inactive,E:1,s:0.85}allez perdre à la roue de la fortune',
                 }
             },
             j_shrimp_JOKER_Broken_Limbs = {
-                name = 'Broken Limbs',
+                name = 'Membres brisés',
                 text = {
                     'Gains {X:mult,C:white}X0.5{} Mult per',
                     '{C:attention}hand{} used this round',

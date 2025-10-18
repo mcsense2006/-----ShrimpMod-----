@@ -45,8 +45,8 @@ return {
                 name = 'Bismuth',
                 text = {
                     'Each scored {C:attention}Wild cards{}',
-                    'gives {C:mult}+5{} mult, {C:white,X:mult}X1.3{} mult,',
-                    '{C:chips}+30{} chips and {C:money}$1'
+                    'gives {C:mult}+5{} mult, {C:white,X:mult}X1.5{} mult,',
+                    '{C:chips}+30{} chips and {C:money}$2'
                 }
             },
             j_shrimp_JOKER_Crustacean_Dealer = {
@@ -352,7 +352,7 @@ return {
             j_shrimp_JOKER_All_Green = {
                 name = 'All Green',
                 text = {
-                    'gains {C:white,X:mult}X1{} mult per',
+                    'gains {C:white,X:mult}X0.5{} mult per',
                     '{C:clubs}club{} {C:attention}flush{} played',
                     '{C:inactive}(currently{} {C:white,X:mult} X#1#{C:inactive} mult){}',
                 }
@@ -365,12 +365,89 @@ return {
                     '{C:inactive}[#1#]{}',
                 }
             },
-            j_shrimp_JOKER_All_Terminals = { --modify code to message the upgrade
+            j_shrimp_JOKER_All_Terminals = {
                 name = 'All Terminals',
                 text = {
-                    'gains {C:white,X:mult}X0.2{} mult each time a',
+                    'gains {C:white,X:mult}X0.1{} mult each time a',
                     '{C:attention}face{} or {C:attention}ace{} card is scored',
                     '{C:inactive}(currently {}{C:white,X:mult}X#1#{} {C:inactive}mult){}'
+                }
+            },
+            j_shrimp_JOKER_Quid_Pro_Quo = {
+                name = "Quid Pro Quo",
+                text = {
+                    '{C:red}-1 joker slot{}, all jokers are {C:attention}retriggered{}',
+                    ' ',
+                    '{C:inactive}Due to me being bad at coding,',
+                    '{C:inactive}it just copies the effect of joker from the position 1 to 5{}'
+                }
+            },
+            j_shrimp_JOKER_Necrosis = {
+                name = 'Necrosis',
+                text = {
+                    'All listed',
+                    '{C:green,E:1} probabilities{}',
+                    'are guaranteed, gains {C:white,X:mult}X0.5{} mult',
+                    'per every card below 52 in deck',
+                    '{C:inactive}(currently{} {C:white,X:mult}X#1#{} {C:inactive}mult){}'
+                }
+            },
+            j_shrimp_JOKER_Apoptosis = {
+                name = 'Apoptosis',
+                text = {
+                    '{C:white,X:mult}X2.22{} mult, last scored card is {C:red}destroyed{},',
+                    ' ',
+                    '{s:0.85,E:2}after destroying 6 cards',
+                    '{C:attention,s:0.85,E:2}sell{} {s:0.85,E:2}this card to create Necrosis',
+                    '{C:inactive}[#1#]'
+                }
+            },
+            j_shrimp_JOKER_Madness = {
+                name = 'Madness',
+                text = {
+                    'Creates a {C:Ultrakill}sinner{} card after',
+                    'selecting a blind. When money is above',
+                    '{C:money}66${} all {C:attention}6s{} give {C:white,X:mult}X1.6{} mult and {C:attention}retrigger the first',
+                    'card 6 times.'
+                }
+            },
+            j_shrimp_JOKER_Rude = {
+                name = "Rude",
+                text = {
+                    'Gains {C:white,X:chips}X0.6{} chips for each {C:attention}6s{} scored',
+                    '{C:inactive}(currently{} {C:white,X:chips}X#1#{} {C:inactive}chips)',
+                    ' ',
+                    '{s:0.85,E:2}(instead gains X6 chips if Angry is also owned){}',
+                }
+            },
+            j_shrimp_JOKER_Angry = {
+                name = "Angry",
+                text = {
+                    'Gains {C:mult}+60{} mult for each {C:attention}6s{}',
+                    'held in hand when hand is played',
+                    '{C:inactive}(Currently{} {C:mult}+#1#{} {C:inactive}mult){}',
+                    ' ',
+                    '{s:0.85,E:2}(instead gains +600 mult if Rude is also owned){}'
+                }
+            },
+            j_shrimp_JOKER_L_Calamitas = {
+                name = 'Calamitas',
+                text = {
+                    'does nothing... for the moment'
+                }
+            },
+            j_shrimp_JOKER_Cry_for_the_weeper = {
+                name = "Cry for the weeper",
+                text = {
+                    '{C:green}1 in 6{} chance of creating a {C:Ultrakill}Sinful{} card',
+                    'when {C:attention}6s{} or {C:attention}aces{} are scored',
+                }
+            },
+            j_shrimp_JOKER_Aestetic_of_hate = {
+                name = "Aestetic Of Hate",
+                text = {
+                    'Grant {C:money}$2{} when a',
+                    '{C:attention}6{} is scored'
                 }
             },
             j_shrimp_JOKER_Gay_Joker = {
@@ -401,10 +478,10 @@ return {
 
                 }
             },
-            j_shrimp_JOKER_Red_Dora = { --modify code to message the upgrade
+            j_shrimp_JOKER_Red_Dora = {
                 name = 'Red Dora',
                 text = {
-                    'Gains {C:mult}+4{} mult for each',
+                    'Gains {C:mult}+5{} mult for each',
                     '{C:diamonds}diamonds{} or {C:hearts}hearts{}',
                     '{C:attention}5{} scored',
                     '{C:inactive}(currently {}{C:mult}+#1#{}{C:inactive} mult){}',
@@ -466,7 +543,7 @@ return {
                 name = 'Predictable Joker',
                 text = {
                     'Each {C:attention}Lucky cards{} held in',
-                    'hand grants {C:mult}+4{} mult and {C:money}1$',
+                    'hand grants {C:mult}+8{} mult and {C:money}3$',
                     ' ',
                     '{C:inactive,E:1,s:0.85}I may or may not trigger if you keep',
                     '{C:inactive,E:1,s:0.85}these lucky cards in hand...',
@@ -567,7 +644,7 @@ return {
             j_shrimp_JOKER_Two_Way_Mirror = {
                 name = 'Two-Way Mirror',
                 text = {
-                    '{C:attention}Glass cards{} gives {C:white,X:mult}X1.75{}',
+                    '{C:attention}Glass cards{} gives {C:white,X:mult}X2{}',
                     'mult when held in hand',
                     ' ',
                     '{C:inactive,E:1,s:0.85}I see you{}',
@@ -796,7 +873,7 @@ return {
             j_shrimp_JOKER_L_Pangoreuil = {
                 name = 'Pangoreuil',
                 text = {
-                    'Creates 15 {C:dark_edition}negatives',
+                    'Creates 20 {C:dark_edition}negatives',
                     '{C:attention}Wheel of fortune{}',
                     'when this card is {C:attention}sold{}',
                     ' ',
@@ -841,6 +918,42 @@ return {
                     'learn what it does',
                 },
             },
+            p_shrimp_Sinful_normal = {
+                name = 'Sinful Pack',
+                group_name = 'Sinful Pack',
+                text = {
+                    'Choose {C:attention}#1#{} of up to',
+                    '{C:attention}#2#{} {C:Ultrakill}Sinful{} cards to',
+                    'be used immediately'
+                }
+            },
+            p_shrimp_Sinful_jumbo = {
+                name = 'Jumbo Sinful Pack',
+                group_name = 'Jumbo Sinful Pack',
+                text = {
+                    'Choose {C:attention}#1#{} of up to',
+                    '{C:attention}#2#{} {C:Ultrakill}Sinful{} cards to',
+                    'be used immediately'
+                }
+            },
+            p_shrimp_Sinful_mega = {
+                name = 'Mega Sinful Pack',
+                group_name = 'Mega Sinful Pack',
+                text = {
+                    'Choose {C:attention}#1#{} of up to',
+                    '{C:attention}#2#{} {C:Ultrakill}Sinful{} cards to',
+                    'be used immediately'
+                }
+            },
+            undiscovered_shrimp_Sinful = {
+                name = 'Not Discovered',
+                text = {
+                    'Purchase or use',
+                    'this card in an',
+                    'unseeded run to',
+                    'learn what it does',
+                },
+            },
         },
         Planets={},
         Sinful={
@@ -852,6 +965,40 @@ return {
                     ' ',
                     '{C:green}1 in 2{} chance of',
                     'creating an {C:attention}investment tag{}'
+                }
+            },
+            c_shrimp_SIN_Wrath = {
+                name = 'Wrath',
+                text = {
+                    '{C:mult,X:dark_edition}WIP',
+                    '{C:mult}WILL EITHER NOT WORK AS INTENDED OR CRASH YOUR GAME{}',
+                    ' ',
+                    'Randomly {C:red}destroys{} one of your {C:attention}jokers',
+                    'to gain {C:money}$25{}'
+                }
+            },
+            c_shrimp_SIN_Gluttony = {
+                name = 'Gluttony',
+                text = {
+                    'Creates a {C:dark_edition}negative{}',
+                    '{C:attention}Gros-Michel'
+                }
+            },
+            c_shrimp_SIN_Envy = {
+                name = 'Envy',
+                text = {
+                    '{C:mult,X:dark_edition}WIP',
+                    '{C:mult}WILL EITHER NOT WORK AS INTENDED OR CRASH YOUR GAME{}',
+                    ' ',
+                    'Creates a copy of a',
+                    'random {C:attention}joker{} in possesion'
+                }
+            },
+            c_shrimp_SIN_Sloth = {
+                name = 'Sloth',
+                text = {
+                    'Grant {C:attention}one fifth{} of',
+                    'your current {C:attention}money'
                 }
             },
             c_shrimp_SIN_Sigilum_Dei = {
@@ -936,6 +1083,9 @@ return {
             v_shrimp_VOUCH_Hoarder_T1 = {
                 name = 'Hoarder T1',
                 text = {
+                    '{C:mult,X:dark_edition}WIP',
+                    '{C:mult}WILL EITHER NOT WORK AS INTENDED OR CRASH YOUR GAME{}',
+                    ' ',
                     'All {C:green}shops{} have one',
                     'extra booster {C:attention}pack{}',
                 }

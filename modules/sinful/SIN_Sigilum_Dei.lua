@@ -53,7 +53,7 @@ SMODS.Consumable {
 
             pseudoshuffle(temp_hand, 12345)
 
-            for i = 1, (G.hand and G.hand.config.card_limit or 0) do destroyed_cards[#destroyed_cards + 1] = temp_hand[i] end
+            for i = 1, card.ability.extra.currenthandsize + ((G.hand and G.hand.config.card_limit or 0)) do destroyed_cards[#destroyed_cards + 1] = temp_hand[i] end
 
             G.E_MANAGER:add_event(Event({
                 trigger = 'after',

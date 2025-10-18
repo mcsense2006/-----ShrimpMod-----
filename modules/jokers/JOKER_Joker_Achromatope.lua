@@ -14,7 +14,7 @@ SMODS.Joker {
     code = "sushii64",
     concept = "Shrimp",
 },
-    config = {extra = {chips = 0, gain = 5}},
+    config = {extra = {chips = 0, gain = 3}},
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.gain, card.ability.extra.chips } }
     end,

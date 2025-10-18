@@ -1,7 +1,7 @@
 SMODS.Consumable {
     key = 'SIN_Greed',
     set = 'Sinful',
-    pos = { x = 0, y = 0 },
+    pos = { x = 3, y = 0 },
     cost = 3,
     unlocked = true,
     discovered = true,
@@ -10,7 +10,7 @@ SMODS.Consumable {
     atlas = 'Sinful',
     use = function(self, card, area, copier)
         local used_card = copier or card
-            if SMODS.pseudorandom_probability(card, 'group_0_0ec453e5', 1, card.ability.extra.odds, 'c_shrimp_SIN_Greed', false) then
+            if SMODS.pseudorandom_probability(card, 'group_0_bfdb8c2f', 1, card.ability.extra.odds, 'c_shrimp_SIN_Greed', false) then
                 
                 G.E_MANAGER:add_event(Event({
                 func = function()

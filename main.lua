@@ -1,15 +1,16 @@
 --------------------MOD CODE--------------------
 --                      If you're the creator of one or another content you see in this mod and you don't want it there, contact me (@marxense) on discord
------VERSION 2.0.0-Public Beta 1-----
+-----VERSION 2.0.0-public beta 2-----
 -- Sprites
 SMODS.Atlas{key = 'Mahjong_Cards',path = 'Mahjong_Cards.png',px = 71, py = 95}
 SMODS.Atlas{key = 'mahjong_back', path = 'mahjong_back.png', px = 71, py = 95}
 SMODS.Atlas{key = 'Mahjong_UI',   path = 'Mahjong_UI.png',   px = 18, py = 18}
-SMODS.Atlas{key = 'modicon',      path = 'icon.png',         px = 32, py = 32}
+SMODS.Atlas{key = 'Voucher',      path = 'voucher.png',      px = 71, py = 95}
 SMODS.Atlas{key = 'booster',      path = 'Booster.png',      px = 71, py = 95}
 SMODS.Atlas{key = 'Sinful',       path = 'Sinful.png',       px = 65, py = 95}
 SMODS.Atlas{key = 'Jokers',       path = 'Jokers.png',       px = 71, py = 95}
 SMODS.Atlas{key = 'Solar',        path = 'Solar.png',        px = 65, py = 95}
+SMODS.Atlas{key = 'modicon',      path = 'icon.png',         px = 32, py = 32}
 SMODS.Atlas{key = 'Tag',          path = 'tag.png',          px = 34, py = 34}
 SMODS.Atlas{key = 'blind_chips',  path = 'BlindChips.png',   atlas_table = 'ANIMATION_ATLAS',frames = 21,px = 34,py = 34}
 -- Custom colors
@@ -60,7 +61,7 @@ end
 SMODS.current_mod.extra_tabs = function()
     local scale = 0.5
     return {
-        -- Our Links tab borrowed from the terraria x balatro mod
+        -- Our-Links tab borrowed from the terraria x balatro mod
         {
             label = 'Our Links',
             tab_definition_function = function()
@@ -218,6 +219,7 @@ assert(SMODS.load_file('./modules/jokers/JOKER_Feast_Or_Famine.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Clairvoyance.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Social_Ladder.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Crustacean_Dealer.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_Aestetic_of_hate.lua'))()
 --Load uncommon jokers
 assert(SMODS.load_file('./modules/jokers/JOKER_Oops_all_1s.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Bismuth.lua'))()
@@ -236,6 +238,7 @@ assert(SMODS.load_file('./modules/jokers/JOKER_Runner_Kick.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Brunnhilde.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Sunk_Cost_Fallacy.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Soul_of_the_Galaxy.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_Cry_for_the_weeper.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Rinshan.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Red_Dora.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Little_Dragons.lua'))()
@@ -257,6 +260,7 @@ assert(SMODS.load_file('./modules/jokers/JOKER_Steak.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Movie_Time.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Appetizer.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Package.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_In_the_wake_of_Poseidon.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_The_Solo.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_The_Partners.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_The_Feast.lua'))()
@@ -271,6 +275,12 @@ assert(SMODS.load_file('./modules/jokers/JOKER_The_Legion.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_The_Court.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_The_Monolith.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_The_Library_Of_Order.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_Quid_Pro_Quo.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_Apoptosis.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_Necrosis.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_Madness.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_Angry.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_Rude.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Flesh_Prison.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_Flesh_Panopticon.lua'))()
 --Load prime jokers
@@ -280,12 +290,13 @@ assert(SMODS.load_file('./modules/jokers/JOKER_Sisyphus_Prime.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_L_Shrimp.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_L_Caterpillar.lua'))()
 assert(SMODS.load_file('./modules/jokers/JOKER_L_Pangoreuil.lua'))()
+assert(SMODS.load_file('./modules/jokers/JOKER_L_Calamitas.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load Blinds
 assert(SMODS.load_file('./modules/blinds/BLIND_The_Rune.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load Vouchers
---assert(SMODS.load_file('./modules/vouchers/VOUCH_Hoarder_T1.lua'))()
+assert(SMODS.load_file('./modules/vouchers/VOUCH_Hoarder_T1.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load Solar
 assert(SMODS.load_file('./modules/solar/SOLAR_Red_Giant.lua'))()
@@ -297,20 +308,25 @@ assert(SMODS.load_file('./modules/solar/SOLAR_Brown_Dwarf.lua'))()
 assert(SMODS.load_file('./modules/solar/SOLAR_Protostar.lua'))()
 --Load Sinful
 assert(SMODS.load_file('./modules/sinful/SIN_Greed.lua'))()
+assert(SMODS.load_file('./modules/sinful/SIN_Wrath.lua'))()
+assert(SMODS.load_file('./modules/sinful/SIN_Envy.lua'))()
+assert(SMODS.load_file('./modules/sinful/SIN_Gluttony.lua'))()
+assert(SMODS.load_file('./modules/sinful/SIN_Sloth.lua'))()
 assert(SMODS.load_file('./modules/sinful/SIN_Sigilum_Dei.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load packs
 assert(SMODS.load_file('./modules/booster/BOOSTER_Solar_Packs.lua'))()
+assert(SMODS.load_file('./modules/booster/BOOSTER_Sinful_Packs.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load Tags
 assert(SMODS.load_file('./modules/tags/TAG_Epic.lua'))()
 ----------------------------------------------------------------------------------------------------------------------
 --Load mahjong related things
-assert(SMODS.load_file('./modules/suits/SUIT_Mahjong.lua'))()
-assert(SMODS.load_file('./modules/deck/DECK_Mahjong.lua'))()
+--assert(SMODS.load_file('./modules/suits/SUIT_Mahjong.lua'))()
+--assert(SMODS.load_file('./modules/deck/DECK_Mahjong.lua'))()
 --Load mahjong hands
-assert(SMODS.load_file('./modules/mahjong_hands/All_Simples.lua'))()
-assert(SMODS.load_file('./modules/mahjong_hands/All_Green.lua'))()
+--assert(SMODS.load_file('./modules/mahjong_hands/All_Simples.lua'))()
+--assert(SMODS.load_file('./modules/mahjong_hands/All_Green.lua'))()
 
 
 -- Main menu (Stolen from JoyousSpring who stole from Cryptid)

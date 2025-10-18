@@ -31,7 +31,7 @@ SMODS.Joker{
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  and not context.blueprint then
             if (context.other_card:get_id() == 14 or context.other_card:is_face()) then
-                card.ability.extra.mult = (card.ability.extra.mult) + 0.2                           -- soit +0.1 soit changer code pour faire jouer et pas scored
+                card.ability.extra.mult = (card.ability.extra.mult) + 0.1
             end
         end
         if context.cardarea == G.jokers and context.joker_main  then

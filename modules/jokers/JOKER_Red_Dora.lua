@@ -32,7 +32,7 @@ SMODS.Joker{
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  and not context.blueprint then
             if (context.other_card:get_id() == 5 and context.other_card:is_suit("Hearts") or context.other_card:is_suit("Diamonds")) then
-                card.ability.extra.mult = (card.ability.extra.mult) + 4
+                card.ability.extra.mult = (card.ability.extra.mult) + 5
             end
         end
         if context.cardarea == G.jokers and context.joker_main  then

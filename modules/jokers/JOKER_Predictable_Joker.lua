@@ -4,8 +4,8 @@ SMODS.Joker{
     config = {
         extra = {
             pos = 1,
-            mult = 4,
-            dollars = 1
+            mult = 8,
+            dollars = 3
         }
     },
     credit = {

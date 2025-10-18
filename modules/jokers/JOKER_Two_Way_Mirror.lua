@@ -3,7 +3,7 @@ SMODS.Joker{
     key = "JOKER_Two_Way_Mirror",
     config = {
         extra = {
-            Xmult = 1.75
+            Xmult = 2
         }
     },
     pos = {x = 3, y = 3},

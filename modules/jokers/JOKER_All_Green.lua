@@ -28,6 +28,7 @@ SMODS.Joker{
     loc_vars = function(self, info_queue, card)
             return {vars = { card.ability.extra.Xmult}}
     end,
+    
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
             if (next(context.poker_hands["Flush"]) and (function()
@@ -41,7 +42,7 @@ SMODS.Joker{
     
     return allMatchSuit and #context.scoring_hand > 0
 end)()) then
-                card.ability.extra.Xmult = (card.ability.extra.Xmult) + 1
+                card.ability.extra.Xmult = (card.ability.extra.Xmult) + 0.5
                 return {
                     message = "Updated!",
                     extra = {

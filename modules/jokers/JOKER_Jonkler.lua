@@ -14,7 +14,7 @@ if tonumber(SMODS.version:sub(12):sub(1, -2)) >= 706 then
         discovered = true,
         config = {
             extra = {
-                gain = 0.2,
+                gain = 0.1,
                 xmult = 1,
             }
         },
